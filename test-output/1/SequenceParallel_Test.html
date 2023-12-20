@@ -1,0 +1,493 @@
+<html>
+<head>
+<title>TestNG:  SequenceParallel_Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>SequenceParallel_Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Dec 18 19:22:19 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>423 seconds (423262 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.inventoryStores.otStore.StoreConsumptionTest.validateCreateStoreConsumptionFunctionality()'><b>validateCreateStoreConsumptionFunctionality</b><br>Test class: tests.inventoryStores.otStore.StoreConsumptionTest<br>Test method: Validating Create Store Consumtion In OT Store<br/>
+<a href="#Output-1451785359" onClick='toggleBox("Output-1451785359", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1451785359" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1451785359">
+Test Case Description: Expected User is Logged in - <b>PR.Akash test</b> .Current User is PR.Akash test<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: The Facility - <b>OPTHA1</b> is already selected.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: 123store- IPD store is selected.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Store pop up closed<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>Items</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Master</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description:  Add Item Button Clicked<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Category Dropdown Clicked in add item <br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Category selected: <b> Medication</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description:  Item HSN code Entered as : <b>HSN90CO</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Item Description Entered as : <b>TransactionPurchase_mpgf</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Item Properties Tax Entered as : <b>GST5 - 5.0%</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Item Properties Expiry Present Checkbox Clicked<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Item Properties Prescription Mandatory Checkbox Clicked<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Item Possible Variant Name Entered as : <b>Variant1</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Item Possible Variant Value Clicked<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Item Possible Variant Value Entered as : <b>1</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Save Button Clicked with filled required field<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>Transaction</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Purchase/GRN</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: New Button Displayed and Clicked in Purchase Transaction<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Item found in purchase: <b> TransactionPurchase_mpgf</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Expiry Date Input box clicked<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Current date selected as expiry date as <b> </b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Unit cost without tax entered as : <b> 100</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: package entry entered as : <b> 5</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Discount entered as : <b> 10</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selling Price entered as : <b> 120</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description:  Save Changes Button CLicked In Inventory Template<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Stock added successfully<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description:  Transaction Notes Entered as :<b> Transaction_notesvolk</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Bill Type Selected:<b> Bill </b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Bill Number: <b> BILL_045924 </b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Purchase Transaction time:<b> 7:25PM</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Date of bill selected:<b> 18 </b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Other Charges: <b> Item_other </b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Save Changes Button Clicked In A Lot Inventory Template<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Store pop up closed<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>Transaction</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Purchase/GRN</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: GRN trsnaction approved successfully<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Store pop up closed<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>Transaction</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Store Consumption</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: New Button Displayed and Clicked in Store Consumption Transaction<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Opened store consumption page and clicked description in LHS<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: added item 1 for store consumption<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: added item 2 for store consumption<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Delete button clicked<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: one item deleted successfully<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Save button clicked without entering required details<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Employee field is required<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Quantity field is required<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Entered quantity <b>2 </b>for the Item<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected employee <b>PR.Akash test </b>for the Item<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Store Consumptions Transaction saved successfully<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Store pop up closed<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>Items</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Lot</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated total stock <b>5.0</b> for the lot<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated blocked lot <b>2.0</b> for the item<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Store pop up closed<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>Transaction</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Store Consumption</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Item name <b>TransactionPurchase_mpgf </b>on UI <br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Employee name <b>PR.Akash test </b>on UI <br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Store consumption Quantity <b>2.0 </b>on UI <br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Transaction is in Open Status<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Clicked cancel transaction button<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Store Consumption Transaction is in Cancelled Status<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+</div>
+</td>
+<td></td>
+<td>280</td>
+<td>tests.inventoryStores.otStore.StoreConsumptionTest@54a3ab8f</td></tr>
+<tr>
+<td title='tests.inventoryStores.otStore.StoreConsumptionTest.editAndApproveStoreConsumptionFunctionality()'><b>editAndApproveStoreConsumptionFunctionality</b><br>Test class: tests.inventoryStores.otStore.StoreConsumptionTest<br>Test method: Validating edit and approve Store Consumtion In OT Store<br/>
+<a href="#Output-510388720" onClick='toggleBox("Output-510388720", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-510388720" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-510388720">
+Test Case Description: Expected User is Logged in - <b>PR.Akash test</b> .Current User is PR.Akash test<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: The Facility - <b>OPTHA1</b> is already selected.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: 123store- IPD store is selected.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Store pop up closed<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>Transaction</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Store Consumption</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: New Button Displayed and Clicked in Store Consumption Transaction<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Opened store consumption page and clicked description in LHS<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Entered  quantity <b>2 </b>for the Item<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected employee <b>PR.Akash test </b>for the Item<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Store Consumptions Transaction saved successfully<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Store Consumption Edit button clicked<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Entered quantity <b>5 </b>for the Item<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected employee <b>Arpit Singh </b>for the Item<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Store Consumptions Transaction saved successfully<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Store pop up closed<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>Items</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Lot</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated total stock <b>5.0</b> for the lot<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated blocked lot <b>5.0</b> for the item<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Store pop up closed<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>Transaction</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Store Consumption</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Store Consmption Transaction Approved<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>Items</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Lot</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated total stock <b>0.0</b> for the lot<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated blocked lot <b>0.0</b> for the item<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+</div>
+</td>
+<td></td>
+<td>127</td>
+<td>tests.inventoryStores.otStore.StoreConsumptionTest@54a3ab8f</td></tr>
+</table><p>
+</body>
+</html>

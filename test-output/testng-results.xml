@@ -1,0 +1,778 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="20" total="21" passed="1" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Test Case Description: Validate Login successful]]>
+    </line>
+    <line>
+      <![CDATA[Expected: true]]>
+    </line>
+    <line>
+      <![CDATA[Actual: true]]>
+    </line>
+    <line>
+      <![CDATA[]]>
+    </line>
+    <line>
+      <![CDATA[Test Case Description: Selected the Facility - <b>TESTING_FACILITY - TST</b>]]>
+    </line>
+    <line>
+      <![CDATA[Expected: true]]>
+    </line>
+    <line>
+      <![CDATA[Actual: true]]>
+    </line>
+    <line>
+      <![CDATA[]]>
+    </line>
+    <line>
+      <![CDATA[Test Case Description: Logged In User = PR.Akash test]]>
+    </line>
+    <line>
+      <![CDATA[Expected: true]]>
+    </line>
+    <line>
+      <![CDATA[Actual: true]]>
+    </line>
+    <line>
+      <![CDATA[]]>
+    </line>
+    <line>
+      <![CDATA[Test Case Description: The Facility - <b>TST</b> is already selected.]]>
+    </line>
+    <line>
+      <![CDATA[Expected: true]]>
+    </line>
+    <line>
+      <![CDATA[Actual: true]]>
+    </line>
+    <line>
+      <![CDATA[]]>
+    </line>
+    <line>
+      <![CDATA[Test Case Description: Selected Option <b>Organisation Settings</b>]]>
+    </line>
+    <line>
+      <![CDATA[Expected: true]]>
+    </line>
+    <line>
+      <![CDATA[Actual: true]]>
+    </line>
+    <line>
+      <![CDATA[]]>
+    </line>
+    <line>
+      <![CDATA[Test Case Description: Selected Option in the Left Panel = <b>General</b>]]>
+    </line>
+    <line>
+      <![CDATA[Expected: true]]>
+    </line>
+    <line>
+      <![CDATA[Actual: true]]>
+    </line>
+    <line>
+      <![CDATA[]]>
+    </line>
+    <line>
+      <![CDATA[Test Case Description: Selected Sub Option in the Left Panel = <b>Patient Settings</b>]]>
+    </line>
+    <line>
+      <![CDATA[Expected: true]]>
+    </line>
+    <line>
+      <![CDATA[Actual: true]]>
+    </line>
+    <line>
+      <![CDATA[]]>
+    </line>
+    <line>
+      <![CDATA[Test Case Description: Selected mandatory field in Patient setting are First Name, Mobile Number]]>
+    </line>
+    <line>
+      <![CDATA[Expected: true]]>
+    </line>
+    <line>
+      <![CDATA[Actual: true]]>
+    </line>
+    <line>
+      <![CDATA[]]>
+    </line>
+    <line>
+      <![CDATA[Test Case Description: OPD department is selected.]]>
+    </line>
+    <line>
+      <![CDATA[Expected: true]]>
+    </line>
+    <line>
+      <![CDATA[Actual: true]]>
+    </line>
+    <line>
+      <![CDATA[]]>
+    </line>
+    <line>
+      <![CDATA[Test Case Description: <b>Add</b> Appointment Button is clicked]]>
+    </line>
+    <line>
+      <![CDATA[Expected: true]]>
+    </line>
+    <line>
+      <![CDATA[Actual: true]]>
+    </line>
+    <line>
+      <![CDATA[]]>
+    </line>
+    <line>
+      <![CDATA[Test Case Description: Add New Patient Button is displayed]]>
+    </line>
+    <line>
+      <![CDATA[Expected: true]]>
+    </line>
+    <line>
+      <![CDATA[Actual: true]]>
+    </line>
+    <line>
+      <![CDATA[]]>
+    </line>
+    <line>
+      <![CDATA[Test Case Description: <b>Add New Patient</b> Button is clicked]]>
+    </line>
+    <line>
+      <![CDATA[Expected: true]]>
+    </line>
+    <line>
+      <![CDATA[Actual: true]]>
+    </line>
+    <line>
+      <![CDATA[]]>
+    </line>
+    <line>
+      <![CDATA[Test Case Description: No. of Tabs on Patient Reg. & Appointment Form is 4]]>
+    </line>
+    <line>
+      <![CDATA[Expected: true]]>
+    </line>
+    <line>
+      <![CDATA[Actual: true]]>
+    </line>
+    <line>
+      <![CDATA[]]>
+    </line>
+    <line>
+      <![CDATA[Test Case Description: Patient Details Tab is selected on start by default.]]>
+    </line>
+    <line>
+      <![CDATA[Expected: true]]>
+    </line>
+    <line>
+      <![CDATA[Actual: true]]>
+    </line>
+    <line>
+      <![CDATA[]]>
+    </line>
+    <line>
+      <![CDATA[Test Case Description: Patient Details Tab is displayed on the form.]]>
+    </line>
+    <line>
+      <![CDATA[Expected: true]]>
+    </line>
+    <line>
+      <![CDATA[Actual: true]]>
+    </line>
+    <line>
+      <![CDATA[]]>
+    </line>
+    <line>
+      <![CDATA[Test Case Description: Other Details Tab is displayed on the form.]]>
+    </line>
+    <line>
+      <![CDATA[Expected: true]]>
+    </line>
+    <line>
+      <![CDATA[Actual: true]]>
+    </line>
+    <line>
+      <![CDATA[]]>
+    </line>
+    <line>
+      <![CDATA[Test Case Description: History Tab is displayed on the form.]]>
+    </line>
+    <line>
+      <![CDATA[Expected: true]]>
+    </line>
+    <line>
+      <![CDATA[Actual: true]]>
+    </line>
+    <line>
+      <![CDATA[]]>
+    </line>
+    <line>
+      <![CDATA[Test Case Description: Allergies Tab is displayed on the form.]]>
+    </line>
+    <line>
+      <![CDATA[Expected: true]]>
+    </line>
+    <line>
+      <![CDATA[Actual: true]]>
+    </line>
+    <line>
+      <![CDATA[]]>
+    </line>
+    <line>
+      <![CDATA[Test Case Description: Alert for compulsory field is visible by default on the empty form.]]>
+    </line>
+    <line>
+      <![CDATA[Expected: true]]>
+    </line>
+    <line>
+      <![CDATA[Actual: true]]>
+    </line>
+    <line>
+      <![CDATA[]]>
+    </line>
+    <line>
+      <![CDATA[Test Case Description: Validate that the Compulsory sections message is First Name and Mobile Number are Compulsory.]]>
+    </line>
+    <line>
+      <![CDATA[Expected: true]]>
+    </line>
+    <line>
+      <![CDATA[Actual: true]]>
+    </line>
+    <line>
+      <![CDATA[]]>
+    </line>
+    <line>
+      <![CDATA[Test Case Description: Alert for compulsory field is highlighted in <b>Red</b> when trying to Create Appointment with empty form. Message = First Name and Mobile Number are Compulsory.]]>
+    </line>
+    <line>
+      <![CDATA[Expected: true]]>
+    </line>
+    <line>
+      <![CDATA[Actual: true]]>
+    </line>
+    <line>
+      <![CDATA[]]>
+    </line>
+    <line>
+      <![CDATA[Test Case Description: First Name is visible in the Compulsory Fields alert message.]]>
+    </line>
+    <line>
+      <![CDATA[Expected: true]]>
+    </line>
+    <line>
+      <![CDATA[Actual: true]]>
+    </line>
+    <line>
+      <![CDATA[]]>
+    </line>
+    <line>
+      <![CDATA[Test Case Description: Mobile Number is visible in the Compulsory Fields alert message.]]>
+    </line>
+    <line>
+      <![CDATA[Expected: true]]>
+    </line>
+    <line>
+      <![CDATA[Actual: true]]>
+    </line>
+    <line>
+      <![CDATA[]]>
+    </line>
+    <line>
+      <![CDATA[Test Case Description: Salutation for Patient is selected as - Mr.]]>
+    </line>
+    <line>
+      <![CDATA[Expected: true]]>
+    </line>
+    <line>
+      <![CDATA[Actual: true]]>
+    </line>
+    <line>
+      <![CDATA[]]>
+    </line>
+    <line>
+      <![CDATA[Test Case Description: First Name is entered as - Elon]]>
+    </line>
+    <line>
+      <![CDATA[Expected: true]]>
+    </line>
+    <line>
+      <![CDATA[Actual: true]]>
+    </line>
+    <line>
+      <![CDATA[]]>
+    </line>
+    <line>
+      <![CDATA[Test Case Description: Middle Name is entered as - ]]>
+    </line>
+    <line>
+      <![CDATA[Expected: true]]>
+    </line>
+    <line>
+      <![CDATA[Actual: true]]>
+    </line>
+    <line>
+      <![CDATA[]]>
+    </line>
+    <line>
+      <![CDATA[Test Case Description: Last Name is entered as - ]]>
+    </line>
+    <line>
+      <![CDATA[Expected: true]]>
+    </line>
+    <line>
+      <![CDATA[Actual: true]]>
+    </line>
+    <line>
+      <![CDATA[]]>
+    </line>
+    <line>
+      <![CDATA[Test Case Description: Mobile Number is entered as - 1234567890]]>
+    </line>
+    <line>
+      <![CDATA[Expected: true]]>
+    </line>
+    <line>
+      <![CDATA[Actual: true]]>
+    </line>
+    <line>
+      <![CDATA[]]>
+    </line>
+    <line>
+      <![CDATA[Test Case Description: MRNfytdg entered for Medical Report Number]]>
+    </line>
+    <line>
+      <![CDATA[Expected: true]]>
+    </line>
+    <line>
+      <![CDATA[Actual: true]]>
+    </line>
+    <line>
+      <![CDATA[]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2023-12-20T13:57:55 IST" name="1" finished-at="2023-12-20T13:58:47 IST" duration-ms="52039">
+    <groups>
+    </groups>
+    <test started-at="2023-12-20T13:57:55 IST" name="Smoke_Scripts" finished-at="2023-12-20T13:58:47 IST" duration-ms="52039">
+      <class name="tests.departments.opd.AddPatientsTest">
+        <test-method is-config="true" signature="setUpSuite()[pri:0, instance:tests.departments.opd.AddPatientsTest@1eea9d2d]" started-at="2023-12-20T13:57:55 IST" name="setUpSuite" finished-at="2023-12-20T13:57:55 IST" duration-ms="752" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpSuite -->
+        <test-method is-config="true" signature="setUpTest(org.testng.ITestContext)[pri:0, instance:tests.departments.opd.AddPatientsTest@1eea9d2d]" started-at="2023-12-20T13:57:55 IST" name="setUpTest" finished-at="2023-12-20T13:58:05 IST" duration-ms="9860" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@734cf881]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:tests.departments.opd.AddPatientsTest@1eea9d2d]" started-at="2023-12-20T13:58:05 IST" name="setUpClass" finished-at="2023-12-20T13:58:05 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="setUpMethod(java.lang.reflect.Method)[pri:0, instance:tests.departments.opd.AddPatientsTest@1eea9d2d]" started-at="2023-12-20T13:58:05 IST" name="setUpMethod" finished-at="2023-12-20T13:58:05 IST" duration-ms="14" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.departments.opd.AddPatientsTest.validateAndFillEssentialPatientDetails()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method signature="validateAndFillEssentialPatientDetails()[pri:0, instance:tests.departments.opd.AddPatientsTest@1eea9d2d]" started-at="2023-12-20T13:58:05 IST" name="validateAndFillEssentialPatientDetails" description="Validate Essential Details are filled in Create New Patient" finished-at="2023-12-20T13:58:45 IST" duration-ms="39912" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Test Case Description: Validate Login successful]]>
+            </line>
+            <line>
+              <![CDATA[Expected: true]]>
+            </line>
+            <line>
+              <![CDATA[Actual: true]]>
+            </line>
+            <line>
+              <![CDATA[]]>
+            </line>
+            <line>
+              <![CDATA[Test Case Description: Selected the Facility - <b>TESTING_FACILITY - TST</b>]]>
+            </line>
+            <line>
+              <![CDATA[Expected: true]]>
+            </line>
+            <line>
+              <![CDATA[Actual: true]]>
+            </line>
+            <line>
+              <![CDATA[]]>
+            </line>
+            <line>
+              <![CDATA[Test Case Description: Logged In User = PR.Akash test]]>
+            </line>
+            <line>
+              <![CDATA[Expected: true]]>
+            </line>
+            <line>
+              <![CDATA[Actual: true]]>
+            </line>
+            <line>
+              <![CDATA[]]>
+            </line>
+            <line>
+              <![CDATA[Test Case Description: The Facility - <b>TST</b> is already selected.]]>
+            </line>
+            <line>
+              <![CDATA[Expected: true]]>
+            </line>
+            <line>
+              <![CDATA[Actual: true]]>
+            </line>
+            <line>
+              <![CDATA[]]>
+            </line>
+            <line>
+              <![CDATA[Test Case Description: Selected Option <b>Organisation Settings</b>]]>
+            </line>
+            <line>
+              <![CDATA[Expected: true]]>
+            </line>
+            <line>
+              <![CDATA[Actual: true]]>
+            </line>
+            <line>
+              <![CDATA[]]>
+            </line>
+            <line>
+              <![CDATA[Test Case Description: Selected Option in the Left Panel = <b>General</b>]]>
+            </line>
+            <line>
+              <![CDATA[Expected: true]]>
+            </line>
+            <line>
+              <![CDATA[Actual: true]]>
+            </line>
+            <line>
+              <![CDATA[]]>
+            </line>
+            <line>
+              <![CDATA[Test Case Description: Selected Sub Option in the Left Panel = <b>Patient Settings</b>]]>
+            </line>
+            <line>
+              <![CDATA[Expected: true]]>
+            </line>
+            <line>
+              <![CDATA[Actual: true]]>
+            </line>
+            <line>
+              <![CDATA[]]>
+            </line>
+            <line>
+              <![CDATA[Test Case Description: Selected mandatory field in Patient setting are First Name, Mobile Number]]>
+            </line>
+            <line>
+              <![CDATA[Expected: true]]>
+            </line>
+            <line>
+              <![CDATA[Actual: true]]>
+            </line>
+            <line>
+              <![CDATA[]]>
+            </line>
+            <line>
+              <![CDATA[Test Case Description: OPD department is selected.]]>
+            </line>
+            <line>
+              <![CDATA[Expected: true]]>
+            </line>
+            <line>
+              <![CDATA[Actual: true]]>
+            </line>
+            <line>
+              <![CDATA[]]>
+            </line>
+            <line>
+              <![CDATA[Test Case Description: <b>Add</b> Appointment Button is clicked]]>
+            </line>
+            <line>
+              <![CDATA[Expected: true]]>
+            </line>
+            <line>
+              <![CDATA[Actual: true]]>
+            </line>
+            <line>
+              <![CDATA[]]>
+            </line>
+            <line>
+              <![CDATA[Test Case Description: Add New Patient Button is displayed]]>
+            </line>
+            <line>
+              <![CDATA[Expected: true]]>
+            </line>
+            <line>
+              <![CDATA[Actual: true]]>
+            </line>
+            <line>
+              <![CDATA[]]>
+            </line>
+            <line>
+              <![CDATA[Test Case Description: <b>Add New Patient</b> Button is clicked]]>
+            </line>
+            <line>
+              <![CDATA[Expected: true]]>
+            </line>
+            <line>
+              <![CDATA[Actual: true]]>
+            </line>
+            <line>
+              <![CDATA[]]>
+            </line>
+            <line>
+              <![CDATA[Test Case Description: No. of Tabs on Patient Reg. & Appointment Form is 4]]>
+            </line>
+            <line>
+              <![CDATA[Expected: true]]>
+            </line>
+            <line>
+              <![CDATA[Actual: true]]>
+            </line>
+            <line>
+              <![CDATA[]]>
+            </line>
+            <line>
+              <![CDATA[Test Case Description: Patient Details Tab is selected on start by default.]]>
+            </line>
+            <line>
+              <![CDATA[Expected: true]]>
+            </line>
+            <line>
+              <![CDATA[Actual: true]]>
+            </line>
+            <line>
+              <![CDATA[]]>
+            </line>
+            <line>
+              <![CDATA[Test Case Description: Patient Details Tab is displayed on the form.]]>
+            </line>
+            <line>
+              <![CDATA[Expected: true]]>
+            </line>
+            <line>
+              <![CDATA[Actual: true]]>
+            </line>
+            <line>
+              <![CDATA[]]>
+            </line>
+            <line>
+              <![CDATA[Test Case Description: Other Details Tab is displayed on the form.]]>
+            </line>
+            <line>
+              <![CDATA[Expected: true]]>
+            </line>
+            <line>
+              <![CDATA[Actual: true]]>
+            </line>
+            <line>
+              <![CDATA[]]>
+            </line>
+            <line>
+              <![CDATA[Test Case Description: History Tab is displayed on the form.]]>
+            </line>
+            <line>
+              <![CDATA[Expected: true]]>
+            </line>
+            <line>
+              <![CDATA[Actual: true]]>
+            </line>
+            <line>
+              <![CDATA[]]>
+            </line>
+            <line>
+              <![CDATA[Test Case Description: Allergies Tab is displayed on the form.]]>
+            </line>
+            <line>
+              <![CDATA[Expected: true]]>
+            </line>
+            <line>
+              <![CDATA[Actual: true]]>
+            </line>
+            <line>
+              <![CDATA[]]>
+            </line>
+            <line>
+              <![CDATA[Test Case Description: Alert for compulsory field is visible by default on the empty form.]]>
+            </line>
+            <line>
+              <![CDATA[Expected: true]]>
+            </line>
+            <line>
+              <![CDATA[Actual: true]]>
+            </line>
+            <line>
+              <![CDATA[]]>
+            </line>
+            <line>
+              <![CDATA[Test Case Description: Validate that the Compulsory sections message is First Name and Mobile Number are Compulsory.]]>
+            </line>
+            <line>
+              <![CDATA[Expected: true]]>
+            </line>
+            <line>
+              <![CDATA[Actual: true]]>
+            </line>
+            <line>
+              <![CDATA[]]>
+            </line>
+            <line>
+              <![CDATA[Test Case Description: Alert for compulsory field is highlighted in <b>Red</b> when trying to Create Appointment with empty form. Message = First Name and Mobile Number are Compulsory.]]>
+            </line>
+            <line>
+              <![CDATA[Expected: true]]>
+            </line>
+            <line>
+              <![CDATA[Actual: true]]>
+            </line>
+            <line>
+              <![CDATA[]]>
+            </line>
+            <line>
+              <![CDATA[Test Case Description: First Name is visible in the Compulsory Fields alert message.]]>
+            </line>
+            <line>
+              <![CDATA[Expected: true]]>
+            </line>
+            <line>
+              <![CDATA[Actual: true]]>
+            </line>
+            <line>
+              <![CDATA[]]>
+            </line>
+            <line>
+              <![CDATA[Test Case Description: Mobile Number is visible in the Compulsory Fields alert message.]]>
+            </line>
+            <line>
+              <![CDATA[Expected: true]]>
+            </line>
+            <line>
+              <![CDATA[Actual: true]]>
+            </line>
+            <line>
+              <![CDATA[]]>
+            </line>
+            <line>
+              <![CDATA[Test Case Description: Salutation for Patient is selected as - Mr.]]>
+            </line>
+            <line>
+              <![CDATA[Expected: true]]>
+            </line>
+            <line>
+              <![CDATA[Actual: true]]>
+            </line>
+            <line>
+              <![CDATA[]]>
+            </line>
+            <line>
+              <![CDATA[Test Case Description: First Name is entered as - Elon]]>
+            </line>
+            <line>
+              <![CDATA[Expected: true]]>
+            </line>
+            <line>
+              <![CDATA[Actual: true]]>
+            </line>
+            <line>
+              <![CDATA[]]>
+            </line>
+            <line>
+              <![CDATA[Test Case Description: Middle Name is entered as - ]]>
+            </line>
+            <line>
+              <![CDATA[Expected: true]]>
+            </line>
+            <line>
+              <![CDATA[Actual: true]]>
+            </line>
+            <line>
+              <![CDATA[]]>
+            </line>
+            <line>
+              <![CDATA[Test Case Description: Last Name is entered as - ]]>
+            </line>
+            <line>
+              <![CDATA[Expected: true]]>
+            </line>
+            <line>
+              <![CDATA[Actual: true]]>
+            </line>
+            <line>
+              <![CDATA[]]>
+            </line>
+            <line>
+              <![CDATA[Test Case Description: Mobile Number is entered as - 1234567890]]>
+            </line>
+            <line>
+              <![CDATA[Expected: true]]>
+            </line>
+            <line>
+              <![CDATA[Actual: true]]>
+            </line>
+            <line>
+              <![CDATA[]]>
+            </line>
+            <line>
+              <![CDATA[Test Case Description: MRNfytdg entered for Medical Report Number]]>
+            </line>
+            <line>
+              <![CDATA[Expected: true]]>
+            </line>
+            <line>
+              <![CDATA[Actual: true]]>
+            </line>
+            <line>
+              <![CDATA[]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- validateAndFillEssentialPatientDetails -->
+        <test-method is-config="true" signature="destroyMethod(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:tests.departments.opd.AddPatientsTest@1eea9d2d]" started-at="2023-12-20T13:58:45 IST" name="destroyMethod" finished-at="2023-12-20T13:58:45 IST" duration-ms="5" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.departments.opd.AddPatientsTest.validateAndFillEssentialPatientDetails()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=validateAndFillEssentialPatientDetails status=SUCCESS method=AddPatientsTest.validateAndFillEssentialPatientDetails()[pri:0, instance:tests.departments.opd.AddPatientsTest@1eea9d2d] output=Test Case Description: Validate Login successful]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- destroyMethod -->
+        <test-method is-config="true" signature="destroyClass()[pri:0, instance:tests.departments.opd.AddPatientsTest@1eea9d2d]" started-at="2023-12-20T13:58:45 IST" name="destroyClass" finished-at="2023-12-20T13:58:45 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- destroyClass -->
+        <test-method is-config="true" signature="destroyTest(org.testng.ITestContext)[pri:0, instance:tests.departments.opd.AddPatientsTest@1eea9d2d]" started-at="2023-12-20T13:58:45 IST" name="destroyTest" finished-at="2023-12-20T13:58:47 IST" duration-ms="1476" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@734cf881]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- destroyTest -->
+        <test-method is-config="true" signature="destroySuite()[pri:0, instance:tests.departments.opd.AddPatientsTest@1eea9d2d]" started-at="2023-12-20T13:58:47 IST" name="destroySuite" finished-at="2023-12-20T13:58:47 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- destroySuite -->
+      </class> <!-- tests.departments.opd.AddPatientsTest -->
+    </test> <!-- Smoke_Scripts -->
+  </suite> <!-- 1 -->
+</testng-results>

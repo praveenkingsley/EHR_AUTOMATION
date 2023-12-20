@@ -1,0 +1,1726 @@
+<html>
+<head>
+<title>TestNG:  Sprint69</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Sprint69</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>5/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Sep 06 23:28:42 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>493 seconds (493332 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.inventoryStores.pharmacyStore.Order.PurchaseOrderTest.validatePartiallyCompletedNewTransaction()'><b>validatePartiallyCompletedNewTransaction</b><br>Test class: tests.inventoryStores.pharmacyStore.Order.PurchaseOrderTest<br>Test method: Validate Created Purchase Order In Purchase Transaction<br/>
+<a href="#Output-2086609996" onClick='toggleBox("Output-2086609996", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2086609996" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2086609996">
+Test Case Description: Expected User is Logged in - <b>PR.Akash test</b> .Current User is PR.Akash test<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Pharmacy automation- Pharmacy store is selected.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>Order</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Purchase</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Purchase Order Transaction -> PO No : RSO-PO-060923-100984 | Status : pending<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Clicked <b>Approve</b> button<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Purchase Order Approved Notify Msg displayed<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>Order</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Purchase</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Purchase Order Transaction -> PO No : RSO-PO-060923-100984 | Status : approved<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Purchase Order : RSO-PO-060923-100984 is Approved<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Clicked <b>New Transaction</b> button<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Goods Receive Note Page is Displayed<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated GRN Date -> 06/09/2023 and Time -> 11:35 PM<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Displayed Purchase Order No : RSO-PO-060923-100984<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Clicked Purchase Order Link<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated PO Link-> Item Description : <b>Midodrine-1</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated PO Link-> Item HSN : <b>HSNMAQ3</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated PO Link-> Item Paid Qty : <b>3.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated PO Link-> Item Free Qty : <b>1.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated PO Link-> Item Tax Percentage : <b>5.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated PO Link-> Item Rate : <b>100.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated PO Link-> Item Discount : <b>63.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated PO Link-> Item Net Amount : <b>248.85</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated PO Link-> Item Remark : <b>TEST</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated PO Link-> Item Description : <b>Ciplox Eye-</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated PO Link-> Item Paid Qty : <b>3.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated PO Link-> Item Free Qty : <b>1.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated PO Link-> Item Tax Percentage : <b>5.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated PO Link-> Item Rate : <b>100.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated PO Link-> Item Discount : <b>12.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated PO Link-> Item Net Amount : <b>302.40</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated PO Link-> Item Remark : <b>TEST</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated PO -> Gross Amount <b>600.0 </b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated PO -> GST5 Tax Amount <b>26.25 </b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated PO -> Other Charges Amount <b>100.0 </b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated PO -> Total Net Amount <b>651.25 </b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Entered AUTO-TEST in Transaction Note<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Displayed vendor in GRN : Supplier ABC - Sonestaa Meadows Thubarahalli Extended Road Thubarahalli, Whitefield Bengaluru, Karnataka, Mysuru, KARNATAKA, 571311<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Bill Type as <b>Bill</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Entered<b> PO_BILL_NO_3690</b> in Bill Number<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Bill Date as 06/09/2023<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Create GRN -> Item Description : <b>Midodrine- 1</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Create GRN for Midodrine- 1-> Item Rate : <b>100.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Create GRN Midodrine- 1-> Total PO Qty : <b>4.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Create GRN Midodrine- 1-> Pending Qty : <b>3.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Create GRN Midodrine- 1-> Tax Percentage : <b>5.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Create GRN Midodrine- 1-> Item Paid Qty : <b>3.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Create GRN Midodrine- 1-> Item Free Qty : <b>1.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Create GRN Midodrine- 1-> Item Discount : <b>63.00</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Create GRN Midodrine- 1-> Item Net Amount : <b>248.85</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Create GRN -> Item Remark : <b>TEST</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Entering value greater than paid qty<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated displayed error message : paid cannot be greater than 3<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Entering value lesser than free qty<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated displayed error message : free cannot be less than 1<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Entered 1.5 in Paid qty for item Midodrine- 1<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Entered 0.0 in Free qty for item Midodrine- 1<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Create GRN -> Discount after changing the quantity : <b>31.50</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Validated Create GRN -> Item Net Amount after changing the quantity : <b>124.42</b><br/>
+Test Case Description: Validated Create GRN -> Item Net Amount after changing the quantity : <b>124.42</b><br/>
+TEST Case Failed ->Validated Create GRN -> Item Net Amount after changing the quantity : <b>124.42</b> expected [true] but found [false]<br/>
+Expected: true<br/>
+Actual: false<br/>
+<br/>
+Test Case Description: Entered <b>558.92</b> in MRP for Item Midodrine- 1<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Entered <b>PO-8722</b> in Batch No for Item Midodrine- 1<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Entered Item Expiry Date as : <b>01/09/2026</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Create GRN -> Item Description : <b>Ciplox Eye</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Create GRN for Ciplox Eye-> Item Rate : <b>100.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Create GRN Ciplox Eye-> Total PO Qty : <b>4.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Create GRN Ciplox Eye-> Pending Qty : <b>3.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Create GRN Ciplox Eye-> Tax Percentage : <b>5.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Create GRN Ciplox Eye-> Item Paid Qty : <b>3.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Create GRN Ciplox Eye-> Item Free Qty : <b>1.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Create GRN Ciplox Eye-> Item Discount : <b>12.00</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Create GRN Ciplox Eye-> Item Net Amount : <b>302.40</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Create GRN -> Item Remark : <b>TEST</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Entering value greater than paid qty<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated displayed error message : <br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Entering value lesser than free qty<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated displayed error message : <br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Entered 3.0 in Paid qty for item Ciplox Eye<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Entered 1.0 in Free qty for item Ciplox Eye<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Entered <b>82.72</b> in MRP for Item Ciplox Eye<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Entered <b>PO-4506</b> in Batch No for Item Ciplox Eye<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Entered Item Expiry Date as : <b>01/09/2026</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated GRN -> Total Gross Amount : <b>450.00</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated GRN -> Total Discount Amount : <b>43.50</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Validated GRN -> Total Net Amount : <b>426.82</b><br/>
+Test Case Description: Validated GRN -> Total Net Amount : <b>426.82</b><br/>
+TEST Case Failed ->Validated GRN -> Total Net Amount : <b>426.82</b> expected [true] but found [false]<br/>
+Expected: true<br/>
+Actual: false<br/>
+<br/>
+Test Case Description: Sub Store dropdown clicked<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Sub Store selected: Default<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Sub Store dropdown clicked<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Sub Store selected: Default<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Displayed Pending amount to be paid : 100.0<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Entering <b>100.0</b> in Pending amount to be paid <br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated GRN -> Total Other Charges after paying vendor charges : <b>100</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Clicked Save Changes<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>Transaction</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Purchase/GRN</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Purchase Grn created and approved<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Purchase Grn no =<b>RSO-GRN-060923-101456</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Purchase GRN -> Item Description : <b>Midodrine-1</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Purchase GRN -> Item(Midodrine-1) -> HSN : <b>HSNMAQ3</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Purchase GRN -> Item(Midodrine-1) -> Batch No : <b>PO-8722</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Purchase GRN -> Item(Midodrine-1) -> Expiry : <b>2026-09-01</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Purchase GRN -> Item(Midodrine-1) -> MRP : <b>558.92</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Purchase GRN -> Item(Midodrine-1) -> GRN Qty : <b>1.5</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Purchase GRN -> Item(Midodrine-1) -> Free Qty : <b>0.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Purchase GRN -> Item(Midodrine-1) -> Rate : <b>100.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Purchase GRN -> Item(Midodrine-1) -> Tax% : <b>5.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Purchase GRN -> Item(Midodrine-1) -> Discount : <b>31.5</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Validated Purchase GRN -> Item(Midodrine-1) -> Total Amount : <b>124.42</b><br/>
+Test Case Description: Validated Purchase GRN -> Item(Midodrine-1) -> Total Amount : <b>124.42</b><br/>
+TEST Case Failed ->Validated Purchase GRN -> Item(Midodrine-1) -> Total Amount : <b>124.42</b> expected [true] but found [false]<br/>
+Expected: true<br/>
+Actual: false<br/>
+<br/>
+Test Case Description: Validated Purchase GRN -> Item(Midodrine-1) -> Remark : <b>TEST</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Purchase GRN -> Item Description : <b>Ciplox Eye-</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Purchase GRN -> Item(Ciplox Eye-) -> Batch No : <b>PO-4506</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Purchase GRN -> Item(Ciplox Eye-) -> Expiry : <b>2026-09-01</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Purchase GRN -> Item(Ciplox Eye-) -> MRP : <b>82.72</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Purchase GRN -> Item(Ciplox Eye-) -> GRN Qty : <b>3.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Purchase GRN -> Item(Ciplox Eye-) -> Free Qty : <b>1.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Purchase GRN -> Item(Ciplox Eye-) -> Rate : <b>100.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Purchase GRN -> Item(Ciplox Eye-) -> Tax% : <b>5.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Purchase GRN -> Item(Ciplox Eye-) -> Discount : <b>12.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Purchase GRN -> Item(Ciplox Eye-) -> Total Amount : <b>302.4</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Purchase GRN -> Item(Ciplox Eye-) -> Remark : <b>TEST</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Created GRN -> Gross Amount <b>450.0 </b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Created GRN -> Total Discount Amount <b>43.5 </b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Validated Created GRN -> GST5 Tax Amount <b>20.33 </b><br/>
+Test Case Description: Validated Created GRN -> GST5 Tax Amount <b>20.33 </b><br/>
+TEST Case Failed ->Validated Created GRN -> GST5 Tax Amount <b>20.33 </b> expected [true] but found [false]<br/>
+Expected: true<br/>
+Actual: false<br/>
+<br/>
+Test Case Description: Validated Created GRN -> Other Charges Amount <b>100.0 </b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Validated Created GRN -> Amount Paid <b>526.82 </b><br/>
+Test Case Description: Validated Created GRN -> Amount Paid <b>526.82 </b><br/>
+TEST Case Failed ->Validated Created GRN -> Amount Paid <b>526.82 </b> expected [true] but found [false]<br/>
+Expected: true<br/>
+Actual: false<br/>
+<br/>
+Validated Created GRN-> Amount Remaining <b>0.0 </b><br/>
+Test Case Description: Validated Created GRN-> Amount Remaining <b>0.0 </b><br/>
+TEST Case Failed ->Validated Created GRN-> Amount Remaining <b>0.0 </b> expected [true] but found [false]<br/>
+Expected: true<br/>
+Actual: false<br/>
+<br/>
+Validated Created GRN -> Total Net Amount <b>526.82 </b><br/>
+Test Case Description: Validated Created GRN -> Total Net Amount <b>526.82 </b><br/>
+TEST Case Failed ->Validated Created GRN -> Total Net Amount <b>526.82 </b> expected [true] but found [false]<br/>
+Expected: true<br/>
+Actual: false<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>Order</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Purchase</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Purchase Order Transaction -> PO No : RSO-PO-060923-100984 | Status : partially_completed<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated partially completed Transaction | PO Status  - <b>Partially Completed</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Transaction against Order -> RSO-GRN-060923-101456 | 06/09/2023  11:36PM  | APPROVED<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+</div>
+</td>
+<td></td>
+<td>140</td>
+<td>tests.inventoryStores.pharmacyStore.Order.PurchaseOrderTest@7a0e1b5e</td></tr>
+<tr>
+<td title='tests.inventoryStores.pharmacyStore.Order.PurchaseOrderTest.validatePurchaseOrderEditFunctionality()'><b>validatePurchaseOrderEditFunctionality</b><br>Test class: tests.inventoryStores.pharmacyStore.Order.PurchaseOrderTest<br>Test method: Validate Purchase Order Edit Functionality<br/>
+<a href="#Output-811051299" onClick='toggleBox("Output-811051299", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-811051299" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-811051299">
+Test Case Description: Expected User is Logged in - <b>PR.Akash test</b> .Current User is PR.Akash test<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Pharmacy automation- Pharmacy store is selected.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>Order</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Purchase</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Purchase Order Transaction -> PO No : RSO-PO-060923-100984 | Status : pending<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Clicked <b>Edit</b> Purchase Order<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Purchase Order Edit Date and Time<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Edit -> Order Note = AUTO-TEST<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Edit -> PO Type = Normal<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Edit -> PO Store = Pharmacy automation<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Edit -> PO GST No = 20BAC<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Edit -> PO Vendor = Supplier ABC - Sonestaa Meadows Thubarahalli Extended Road Thubarahalli, Whitefield Bengaluru, Karnataka, Mysuru, KARNATAKA, 571311<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Edit -> PO Expiry Date = 07/09/2023<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Edit -> PO Vendor Credit Days = 45<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Edit -> PO Store Ship To = Pharmacy automation - add, Hassan, KARNATAKA, 573213<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Edit -> PO Store Bill To = Pharmacy automation - add, Hassan, KARNATAKA, 573213<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Item : Midodrine found in Create PO<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated -> Rate for Midodrine : <b>100.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated -> Tax Rate for Midodrine : <b>5.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated -> Paid Qty for Midodrine : <b>3.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated -> Free Qty for Midodrine : <b>1.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated -> Discount Amount for Midodrine : <b>63.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated -> Net Amount for Midodrine : <b>248.85</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated -> Selected Sub-Store for Midodrine : <b>N/A</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated -> Remark for Midodrine : <b>TEST</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Item : Ciplox Eye found in Create PO<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated -> Rate for Ciplox Eye : <b>100.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated -> Tax Rate for Ciplox Eye : <b>5.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated -> Paid Qty for Ciplox Eye : <b>3.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated -> Free Qty for Ciplox Eye : <b>1.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated -> Discount Amount for Ciplox Eye : <b>12.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated -> Net Amount for Ciplox Eye : <b>302.4</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated -> Selected Sub-Store for Ciplox Eye : <b>N/A</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated -> Remark for Ciplox Eye : <b>TEST</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validate PO Edit -> Gross Amount :<b>  600.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validate PO Edit -> Discount Amount :<b> 75.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validate PO Edit -> Net Amount Validated:<b> 651.25</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Purchase Order Saved<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Purchase Order Transaction -> PO No : RSO-PO-060923-100984 | Status : pending<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated PO Updated At : 06-09-2023 | 11:34 PM<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+</div>
+</td>
+<td></td>
+<td>32</td>
+<td>tests.inventoryStores.pharmacyStore.Order.PurchaseOrderTest@7a0e1b5e</td></tr>
+<tr>
+<td title='tests.inventoryStores.pharmacyStore.Order.PurchaseOrderTest.validatePurchaseOrderRHS()'><b>validatePurchaseOrderRHS</b><br>Test class: tests.inventoryStores.pharmacyStore.Order.PurchaseOrderTest<br>Test method: Validate Purchase Order RHS<br/>
+<a href="#Output-1331138498" onClick='toggleBox("Output-1331138498", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1331138498" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1331138498">
+Test Case Description: Expected User is Logged in - <b>PR.Akash test</b> .Current User is PR.Akash test<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Pharmacy automation- Pharmacy store is selected.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>Order</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Purchase</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Purchase Order Transaction -> PO No : RSO-PO-060923-100984 | Status : pending<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Purchase Order RHS -> PO No :<b> RSO-PO-060923-100984</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Purchase Order Created By <b>PR.Akash test</b> at -> <b>06-09-2023 | 11:32 PM</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Purchase Order RHS -> PO Status :<b> Pending</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Purchase Order RHS -> PO Type :<b> Normal</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Purchase Order RHS -> PO Type :<b> 07/09/2023</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Purchase Order RHS -> Vendor Name :<b> Supplier ABC</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Purchase Order RHS -> Vendor Address :<b> Sonestaa Meadows Thubarahalli Extended Road Thubarahalli, Whitefield Bengaluru, Karnataka</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Purchase Order RHS -> Vendor GST No :<b> 21EAC</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Purchase Order RHS -> Vendor Credit Days :<b> 45</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Purchase Order RHS -> Ship To Address :<b> Pharmacy automation - add, Hassan, KARNATAKA, 573213</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Purchase Order RHS -> Bill To Address :<b> Pharmacy automation - add, Hassan, KARNATAKA, 573213</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Purchase Order RHS -> Store GST No :<b> 20BAC</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Purchase Order RHS -> Store Entity Group :<b> Testing_Entity - test1</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated -> PO Created Item Description : <b>Midodrine-1</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated -> PO Created Item HSN : <b>HSNMAQ3</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated ->PO Created Item Paid Qty : <b>3.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated ->PO Created Item Free Qty : <b>1.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated ->PO Created Item Tax Percentage : <b>5.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated ->PO Created Item Rate : <b>100.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated ->PO Created Item Discount : <b>63.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated ->PO Created Item Net Amount : <b>248.85</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated -> PO Created Item Remark : <b>TEST</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated -> PO Created Item Description : <b>Ciplox Eye-</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated ->PO Created Item Paid Qty : <b>3.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated ->PO Created Item Free Qty : <b>1.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated ->PO Created Item Tax Percentage : <b>5.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated ->PO Created Item Rate : <b>100.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated ->PO Created Item Discount : <b>12.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated ->PO Created Item Net Amount : <b>302.40</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated -> PO Created Item Remark : <b>TEST</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated PO -> Gross Amount <b>600.0 </b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated PO -> GST5 Tax Amount <b>26.25 </b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated PO -> Other Charges Amount <b>100.0 </b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated PO -> Total Net Amount <b>651.25 </b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+</div>
+</td>
+<td></td>
+<td>27</td>
+<td>tests.inventoryStores.pharmacyStore.Order.PurchaseOrderTest@7a0e1b5e</td></tr>
+<tr>
+<td title='tests.inventoryStores.pharmacyStore.Order.PurchaseOrderTest.validatePurchaseOrderCreation()'><b>validatePurchaseOrderCreation</b><br>Test class: tests.inventoryStores.pharmacyStore.Order.PurchaseOrderTest<br>Test method: Create Purchase Order<br/>
+<a href="#Output-611595037" onClick='toggleBox("Output-611595037", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-611595037" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-611595037">
+Test Case Description: Expected User is Logged in - <b>PR.Akash test</b> .Current User is PR.Akash test<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option <b>Organisation Settings</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>Inventory & Supply Chain</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Store Setup</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Default Billing Address for Pharmacy automation is <b>add</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: GST no. present in Pharmacy automation is <b>20BAC</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Default Shipping Address for Pharmacy automation is <b>add</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>Inventory & Supply Chain</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Vendor Master</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Vendor Credit days present in Supplier ABC is <b>45</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Vendor GST No present in Supplier ABC is <b>21EAC</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>Inventory & Supply Chain</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Terms & Conditions</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Pharmacy automation- Pharmacy store is selected.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>Items</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Master</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: <b> Midodrine </b> is present in Item Master List<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Available stock of item : Midodrine --> <b>10.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: <b> Ciplox Eye </b> is present in Item Master List<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Available stock of item : Ciplox Eye --> <b>22.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>Order</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Purchase</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Clicked <b>New</b> Button in  Purchase Order<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Create Purchase Order Page displayed<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Purchase Order time:<b> 11:32 PM</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Purchase Order date:<b> 06/09/2023</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Purchase Order Date and Time<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Store selected : <b>Pharmacy automation </b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Vendor selected : <b>Supplier ABC</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: PO Type selected : <b>Normal </b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validate the PO item:<b> Midodrine </b> is found & selected<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Displayed Add Lot Header : <b>Add Lot - Midodrine</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Add Lot Header -> Description : <b>Midodrine</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Add Lot Header -> HSN No : <b>HSNMAQ3</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Add Lot Header -> Item Code : <b>INV-MED-1204</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Add Lot Header -> Category : <b>Medication</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Add Lot Header -> Dispensing Unit : <b>Tablets</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Add Lot Header -> Package Type : <b>Box</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Add Lot Header -> Sub Package Type : <b>Number</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Add Lot Header -> Sub Package in Package : <b>1</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Add Lot Header -> Unit Type : <b>Number</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Add Lot Header -> Unit in Sub Package : <b>1</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Clicked <b>Save</b> without entering any value<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Error Msg is displayed for Total Paid Unit -> <b>Please enter a value greater than or equal to 1.</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Error Msg is displayed for Unit Cost -> <b>Required</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated ->Displayed Possible Variant Name <b>Variant1</b> for the item Midodrine<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Displayed variants for Variant1 : <b>1</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected <b>1</b> in variant Variant1<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Expiry Date for item Midodrine as <b>01/09/2026</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Entered Unit Cost price w/o Tax as : <b>100</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Displayed Unit Cost price with Tax : <b>105.00</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Entered <b>1</b> in Sub Package<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Displayed Paid qty ->Units in a Sub Package= 1.0<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Entered <b>1</b> in Package<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Displayed Paid qty ->Units in a Package= 1.0<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Entered <b>3</b> in Unit Quantity<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Entered <b>1.0</b> in Free Quantity<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Entered <b>21</b> in Discount input<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected <b>%</b> as Discount Type<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated -> Displayed Discount Amount : <b>63.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated -> Displayed Total Cost Amount : <b>248.85</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Clicked <b>Save</b> Lot<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validate the PO item:<b> Ciplox Eye </b> is found & selected<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Displayed Add Lot Header : <b>Add Lot - Ciplox Eye</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Add Lot Header -> Description : <b>Ciplox Eye</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Add Lot Header -> HSN No : <b></b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Add Lot Header -> Item Code : <b>INV-MED-1021</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Add Lot Header -> Category : <b>medication</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Add Lot Header -> Dispensing Unit : <b>Eyedrops</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Add Lot Header -> Package Type : <b>Box</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Add Lot Header -> Sub Package Type : <b>Number</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Add Lot Header -> Sub Package in Package : <b>10</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Add Lot Header -> Unit Type : <b>Number</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Add Lot Header -> Unit in Sub Package : <b>1</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Clicked <b>Save</b> without entering any value<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Error Msg is displayed for Total Paid Unit -> <b>Please enter a value greater than or equal to 1.</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Error Msg is displayed for Unit Cost -> <b>Required</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Expiry Date for item Ciplox Eye as <b>01/09/2026</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Entered Unit Cost price w/o Tax as : <b>100</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Displayed Unit Cost price with Tax : <b>105.00</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Entered <b>1</b> in Sub Package<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Displayed Paid qty ->Units in a Sub Package= 1.0<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Entered <b>1</b> in Package<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Displayed Paid qty ->Units in a Package= 10.0<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Entered <b>3</b> in Unit Quantity<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Entered <b>1.0</b> in Free Quantity<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Entered <b>12</b> in Discount input<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected <b>₹</b> as Discount Type<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated -> Displayed Discount Amount : <b>12.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated -> Displayed Total Cost Amount : <b>302.4</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Clicked <b>Save</b> Lot<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Entered AUTO-TEST in Order Note<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated displayed Store GST No : <b>20BAC</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated displayed PO expiry Date : <b>07/09/2023</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated displayed Vendor Credit Days : <b>45</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated displayed Bill To Address : <b>Pharmacy automation - add, Hassan, KARNATAKA, 573213</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated displayed Ship To Address : <b>Pharmacy automation - add, Hassan, KARNATAKA, 573213</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Item : Midodrine found in Create PO<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated -> Rate for Midodrine : <b>100</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated -> Tax Rate for Midodrine : <b>5.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated -> Paid Qty for Midodrine : <b>3.00</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated -> Free Qty for Midodrine : <b>1</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated -> Discount Amount for Midodrine : <b>63.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated -> Net Amount for Midodrine : <b>248.85</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated -> Selected Sub-Store for Midodrine : <b>N/A</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Entered TEST in remark<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Item : Ciplox Eye found in Create PO<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated -> Rate for Ciplox Eye : <b>100</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated -> Tax Rate for Ciplox Eye : <b>5.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated -> Paid Qty for Ciplox Eye : <b>3.00</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated -> Free Qty for Ciplox Eye : <b>1</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated -> Discount Amount for Ciplox Eye : <b>12.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated -> Net Amount for Ciplox Eye : <b>302.40</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated -> Selected Sub-Store for Ciplox Eye : <b>N/A</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Entered TEST in remark<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected <b>Fitting Charges</b> on Other Charges<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Entered <b>50.0</b> on Other Charges<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Entered <b>100.0</b> on Other Charges Percentage<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Displayed Other Charges : <b> 100.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Clicked Add new Other Charges button<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated --> Add Other Charges<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected <b>Item_other</b> on Newly added Other Charges<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Entered <b>50.0</b> on Newly added Other Charges<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Clicked <b>-</b> in other charge<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Total Other Charges : <b>50.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Clicked Remove Other Charges button<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated --> Delete Other Charges<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Total Other Charges after deleting other charge : <b>100.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Gross Amount Validated:<b>  600.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Discount Amount Validated:<b> 75.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: GST5 Amount Validated: <b> 26.25</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Net Amount Validated:<b> 651.25</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Payment Terms -> Displayed Terms : <b>Test Payment Terms and Conditions</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Payment Terms as : <b>Test Payment Terms and Conditions</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Clicked <b>Delivery Terms</b> button<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Delivery Terms -> Displayed Terms : <b>Test Delivery Terms and Conditions</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Delivery Terms as : <b>Test Delivery Terms and Conditions</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Purchase Order Saved<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Purchase Order Transaction -> PO No : RSO-PO-060923-100984 | Status : pending<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated PO Created At : 06-09-2023 | 11:32 PM<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+</div>
+</td>
+<td></td>
+<td>212</td>
+<td>tests.inventoryStores.pharmacyStore.Order.PurchaseOrderTest@7a0e1b5e</td></tr>
+<tr>
+<td title='tests.inventoryStores.pharmacyStore.Order.PurchaseOrderTest.validateCompletedNewTransaction()'><b>validateCompletedNewTransaction</b><br>Test class: tests.inventoryStores.pharmacyStore.Order.PurchaseOrderTest<br>Test method: Validate Completed Transaction Purchase Order <br/>
+<a href="#Output-1933826684" onClick='toggleBox("Output-1933826684", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1933826684" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1933826684">
+Test Case Description: Expected User is Logged in - <b>PR.Akash test</b> .Current User is PR.Akash test<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Pharmacy automation- Pharmacy store is selected.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>Order</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Purchase</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Purchase Order Transaction -> PO No : RSO-PO-060923-100984 | Status : partially_completed<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Clicked <b>New Transaction</b> button<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Goods Receive Note Page is Displayed<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated GRN Date -> 06/09/2023 and Time -> 11:37 PM<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Displayed Purchase Order No : RSO-PO-060923-100984<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Clicked Purchase Order Link<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Entered AUTO-TEST in Transaction Note<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Displayed vendor in GRN : Supplier ABC - Sonestaa Meadows Thubarahalli Extended Road Thubarahalli, Whitefield Bengaluru, Karnataka, Mysuru, KARNATAKA, 571311<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Bill Type as <b>Bill</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Entered<b> PO_BILL_NO_9015</b> in Bill Number<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Bill Date as 06/09/2023<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Create GRN -> Item Description : <b>Midodrine- 1</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Create GRN for Midodrine- 1-> Item Rate : <b>100.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Create GRN Midodrine- 1-> Total PO Qty : <b>4.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Create GRN Midodrine- 1-> Pending Qty : <b>1.5</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Create GRN Midodrine- 1-> Tax Percentage : <b>5.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Create GRN Midodrine- 1-> Item Paid Qty : <b>3.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Create GRN Midodrine- 1-> Item Free Qty : <b>1.0</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated Create GRN Midodrine- 1-> Item Discount : <b>31.50</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Validated Create GRN Midodrine- 1-> Item Net Amount : <b>124.42</b><br/>
+Test Case Description: Validated Create GRN Midodrine- 1-> Item Net Amount : <b>124.42</b><br/>
+TEST Case Failed ->Validated Create GRN Midodrine- 1-> Item Net Amount : <b>124.42</b> expected [true] but found [false]<br/>
+Expected: true<br/>
+Actual: false<br/>
+<br/>
+Test Case Description: Validated Create GRN -> Item Remark : <b>TEST</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Entering value greater than paid qty<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated displayed error message : paid cannot be greater than 1.5<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Entering value lesser than free qty<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated displayed error message : free cannot be less than 1<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Entered 1.5 in Paid qty for item Midodrine- 1<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Entered 1.0 in Free qty for item Midodrine- 1<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Entered <b>244.44</b> in MRP for Item Midodrine- 1<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Entered <b>PO-6521</b> in Batch No for Item Midodrine- 1<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Entered Item Expiry Date as : <b>01/09/2026</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated GRN -> Total Gross Amount : <b>150.00</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validated GRN -> Total Discount Amount : <b>31.50</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Validated GRN -> Total GST5 Amount : <b>5.92</b><br/>
+Test Case Description: Validated GRN -> Total GST5 Amount : <b>5.92</b><br/>
+TEST Case Failed ->Validated GRN -> Total GST5 Amount : <b>5.92</b> expected [true] but found [false]<br/>
+Expected: true<br/>
+Actual: false<br/>
+<br/>
+Validated GRN -> Total Net Amount : <b>124.42</b><br/>
+Test Case Description: Validated GRN -> Total Net Amount : <b>124.42</b><br/>
+TEST Case Failed ->Validated GRN -> Total Net Amount : <b>124.42</b> expected [true] but found [false]<br/>
+Expected: true<br/>
+Actual: false<br/>
+<br/>
+Test Case Description: Validated Displayed Pending amount to be paid : 0.0<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Clicked Save Changes<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>Transaction</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Purchase/GRN</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+</div>
+</td>
+<td></td>
+<td>71</td>
+<td>tests.inventoryStores.pharmacyStore.Order.PurchaseOrderTest@7a0e1b5e</td></tr>
+</table><p>
+</body>
+</html>

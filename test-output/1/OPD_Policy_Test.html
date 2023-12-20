@@ -1,0 +1,364 @@
+<html>
+<head>
+<title>TestNG:  OPD_Policy_Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>OPD_Policy_Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Nov 09 21:43:35 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>394 seconds (394468 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.authorizationpolicy.opd.SettleBillsPolicyTest.validatePolicy_settleBills()'><b>validatePolicy_settleBills</b><br>Test class: tests.authorizationpolicy.opd.SettleBillsPolicyTest<br>Test method: Validate OPD Credit Bill Settle access<br/>
+<a href="#Output-459249162" onClick='toggleBox("Output-459249162", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-459249162" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-459249162">
+Test Case Description: Expected User is Logged in - <b>Dr. Akash Jajee</b> .Current User is Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option <b>Organisation Settings</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>General</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Organisation Setup</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Clicked user policy for user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: opened authorization policy page for the user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: OPD policy clicked<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: OPD Credit Bill Settle access
+Authorized:    NO<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option <b>Organisation Settings</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>General</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Organisation Setup</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: <font color='blue'>Validated OPD Credit Bill Settle access is disabled for the user</font><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Expected User is Logged in - <b>Dr. Akash Jajee</b> .Current User is Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option <b>Organisation Settings</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>General</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Organisation Setup</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Clicked user policy for user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: opened authorization policy page for the user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: OPD policy clicked<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: OPD Credit Bill Settle access
+Authorized:    YES<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+<font color='blue'>Validated OPD Credit Bill Settle access is enabled for the user</font><br/>
+Test Case Description: <font color='blue'>Validated OPD Credit Bill Settle access is enabled for the user</font><br/>
+TEST Case Failed -><font color='blue'>Validated OPD Credit Bill Settle access is enabled for the user</font> expected [true] but found [false]<br/>
+Expected: true<br/>
+Actual: false<br/>
+<br/>
+</div>
+</td>
+<td></td>
+<td>145</td>
+<td>tests.authorizationpolicy.opd.SettleBillsPolicyTest@3dddbe65</td></tr>
+<tr>
+<td title='tests.authorizationpolicy.opd.AdverseEventPolicyTest.validatePolicy_createAdverseEvent()'><b>validatePolicy_createAdverseEvent</b><br>Test class: tests.authorizationpolicy.opd.AdverseEventPolicyTest<br>Test method: Validate Create Adverse Event access.<br/>
+<a href="#Output-624718217" onClick='toggleBox("Output-624718217", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-624718217" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-624718217">
+Test Case Description: Clicked user policy for user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: opened authorization policy page for the user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: OPD policy clicked<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Create Adverse Event access.
+Authorized:    NO<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option <b>Organisation Settings</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>General</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Organisation Setup</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Expected User is Logged in - <b>Dr. Akash Jajee</b> .Current User is Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Patient name - Mr. Mark <br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: <font color='blue'>Validated Create Adverse Event access. is disabled for the user</font><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Expected User is Logged in - <b>Dr. Akash Jajee</b> .Current User is Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option <b>Organisation Settings</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>General</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Organisation Setup</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Clicked user policy for user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: opened authorization policy page for the user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: OPD policy clicked<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Create Adverse Event access.
+Authorized:    YES<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Patient name - Mr. Mark <br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: <font color='blue'>Validated Create Adverse Event access. is enabled for the user</font><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+</div>
+</td>
+<td></td>
+<td>119</td>
+<td>tests.authorizationpolicy.opd.AdverseEventPolicyTest@41c07648</td></tr>
+<tr>
+<td title='tests.authorizationpolicy.opd.TemplateBillsPolicyTest.validatePolicy_viewTemplateBills()'><b>validatePolicy_viewTemplateBills</b><br>Test class: tests.authorizationpolicy.opd.TemplateBillsPolicyTest<br>Test method: Validate OPD billing Templates view Access<br/>
+<a href="#Output-933417356" onClick='toggleBox("Output-933417356", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-933417356" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-933417356">
+Test Case Description: Clicked user policy for user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: opened authorization policy page for the user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: OPD policy clicked<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: OPD billing Templates view Access
+Authorized:    NO<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option <b>Organisation Settings</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>General</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Organisation Setup</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Expected User is Logged in - <b>Dr. Akash Jajee</b> .Current User is Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Patient name - Mr. Mark <br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: <font color='blue'>Validated OPD billing Templates view Access is disabled for the user</font><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Expected User is Logged in - <b>Dr. Akash Jajee</b> .Current User is Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option <b>Organisation Settings</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>General</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Organisation Setup</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Clicked user policy for user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: opened authorization policy page for the user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: OPD policy clicked<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: OPD billing Templates view Access
+Authorized:    YES<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Patient name - Mr. Mark <br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: <font color='blue'>Validated OPD billing Templates view Access is enabled for the user</font><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+</div>
+</td>
+<td></td>
+<td>117</td>
+<td>tests.authorizationpolicy.opd.TemplateBillsPolicyTest@781e7326</td></tr>
+</table><p>
+</body>
+</html>

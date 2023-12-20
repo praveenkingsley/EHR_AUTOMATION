@@ -1,0 +1,2208 @@
+<html>
+<head>
+<title>TestNG:  IPD_Policy_Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>IPD_Policy_Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>17/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Nov 09 22:32:07 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>3837 seconds (3837267 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.authorizationpolicy.ipd.PatientFlowPolicyTest.validatePolicy_readmitPatient()'><b>validatePolicy_readmitPatient</b><br>Test class: tests.authorizationpolicy.ipd.PatientFlowPolicyTest<br>Test method: Validate Re-Admit patient access<br/>
+<a href="#Output-1905441010" onClick='toggleBox("Output-1905441010", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1905441010" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1905441010">
+Test Case Description: Clicked user policy for user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: opened authorization policy page for the user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: IPD policy clicked<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Re admit Discharged patient access
+Authorized:    NO<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option <b>Organisation Settings</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>General</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Organisation Setup</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Expected User is Logged in - <b>Dr. Akash Jajee</b> .Current User is Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: IPD department is selected.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Expected User is Logged in - <b>Dr. Akash Jajee</b> .Current User is Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: OPD department is selected.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Patient name - Mr. Mark <br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Patient name - Mr. Mark <br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Application not loaded in the browserjava.lang.Exception: Element not clicked org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//select[@name='admission[ward_id]']"}
+  (Session info: chrome=119.0.6045.107)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'SPZMUMLAP0011', ip: '192.168.1.4', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ca034e8065c6697608ada1cb8fc83abe, findElement {using=xpath, value=//select[@name='admission[ward_id]']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.107, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\praveenikkr\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60765}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60765/devtoo..., se:cdpVersion: 119.0.6045.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ca034e8065c6697608ada1cb8fc83abe<br/>
+TEST Case Failed ->Application not loaded in the browserjava.lang.Exception: Element not clicked org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//select[@name='admission[ward_id]']"}
+  (Session info: chrome=119.0.6045.107)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'SPZMUMLAP0011', ip: '192.168.1.4', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ca034e8065c6697608ada1cb8fc83abe, findElement {using=xpath, value=//select[@name='admission[ward_id]']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.107, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\praveenikkr\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60765}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60765/devtoo..., se:cdpVersion: 119.0.6045.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ca034e8065c6697608ada1cb8fc83abe expected [true] but found [false]<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: <font color='blue'>Validated Re admit Discharged patient access is disabled for the user</font><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Expected User is Logged in - <b>Dr. Akash Jajee</b> .Current User is Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option <b>Organisation Settings</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>General</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Organisation Setup</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Clicked user policy for user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: opened authorization policy page for the user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: IPD policy clicked<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Re admit Discharged patient access
+Authorized:    YES<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+<font color='blue'>Validated Re admit Discharged patient access is enabled for the user</font><br/>
+Test Case Description: <font color='blue'>Validated Re admit Discharged patient access is enabled for the user</font><br/>
+TEST Case Failed -><font color='blue'>Validated Re admit Discharged patient access is enabled for the user</font> expected [true] but found [false]<br/>
+Expected: true<br/>
+Actual: false<br/>
+<br/>
+</div>
+</td>
+<td></td>
+<td>281</td>
+<td>tests.authorizationpolicy.ipd.PatientFlowPolicyTest@1cfd1875</td></tr>
+<tr>
+<td title='tests.authorizationpolicy.ipd.PatientFlowPolicyTest.validatePolicy_undoBillingClearance()'><b>validatePolicy_undoBillingClearance</b><br>Test class: tests.authorizationpolicy.ipd.PatientFlowPolicyTest<br>Test method: Validate Undo Billing Clearance access<br/>
+<a href="#Output-1797614596" onClick='toggleBox("Output-1797614596", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1797614596" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1797614596">
+Test Case Description: Clicked user policy for user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: opened authorization policy page for the user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: IPD policy clicked<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Billing Clearance Undo access
+Authorized:    NO<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option <b>Organisation Settings</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>General</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Organisation Setup</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option <b>Organisation Settings</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>General</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Organisation Setup</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option <b>Finance Settings</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Expected User is Logged in - <b>Dr. Akash Jajee</b> .Current User is Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: IPD department is selected.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Expected User is Logged in - <b>Dr. Akash Jajee</b> .Current User is Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: OPD department is selected.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Patient name - Mr. Mark <br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Patient name - Mr. Mark <br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Application not loaded in the browserjava.lang.Exception: Element not clicked org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//select[@name='admission[ward_id]']"}
+  (Session info: chrome=119.0.6045.107)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'SPZMUMLAP0011', ip: '192.168.1.4', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ca034e8065c6697608ada1cb8fc83abe, findElement {using=xpath, value=//select[@name='admission[ward_id]']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.107, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\praveenikkr\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60765}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60765/devtoo..., se:cdpVersion: 119.0.6045.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ca034e8065c6697608ada1cb8fc83abe<br/>
+TEST Case Failed ->Application not loaded in the browserjava.lang.Exception: Element not clicked org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//select[@name='admission[ward_id]']"}
+  (Session info: chrome=119.0.6045.107)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'SPZMUMLAP0011', ip: '192.168.1.4', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ca034e8065c6697608ada1cb8fc83abe, findElement {using=xpath, value=//select[@name='admission[ward_id]']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.107, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\praveenikkr\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60765}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60765/devtoo..., se:cdpVersion: 119.0.6045.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ca034e8065c6697608ada1cb8fc83abe expected [true] but found [false]<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: <font color='blue'>Validated Billing Clearance Undo access is disabled for the user</font><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Expected User is Logged in - <b>Dr. Akash Jajee</b> .Current User is Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option <b>Organisation Settings</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>General</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Organisation Setup</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Clicked user policy for user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: opened authorization policy page for the user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: IPD policy clicked<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Billing Clearance Undo access
+Authorized:    YES<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+<font color='blue'>Validated Billing Clearance Undo access is enabled for the user</font><br/>
+Test Case Description: <font color='blue'>Validated Billing Clearance Undo access is enabled for the user</font><br/>
+TEST Case Failed -><font color='blue'>Validated Billing Clearance Undo access is enabled for the user</font> expected [true] but found [false]<br/>
+Expected: true<br/>
+Actual: false<br/>
+<br/>
+</div>
+</td>
+<td></td>
+<td>295</td>
+<td>tests.authorizationpolicy.ipd.PatientFlowPolicyTest@1cfd1875</td></tr>
+<tr>
+<td title='tests.authorizationpolicy.ipd.ScheduleAdmissionPolicyTest.validatePolicy_emergencyAdmission()'><b>validatePolicy_emergencyAdmission</b><br>Test class: tests.authorizationpolicy.ipd.ScheduleAdmissionPolicyTest<br>Test method: Schedule Emergency IP Admission Access<br/>
+<a href="#Output-767528188" onClick='toggleBox("Output-767528188", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-767528188" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-767528188">
+Test Case Description: Clicked user policy for user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: opened authorization policy page for the user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: IPD policy clicked<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Schedule Emergency IP Admission Access
+Authorized:    NO<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option <b>Organisation Settings</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>General</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Organisation Setup</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Expected User is Logged in - <b>Dr. Akash Jajee</b> .Current User is Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: OPD department is selected.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Patient name - Mr. Mark <br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: <font color='blue'>Validated Schedule Emergency IP Admission Access is disabled for the user</font><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Expected User is Logged in - <b>Dr. Akash Jajee</b> .Current User is Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option <b>Organisation Settings</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>General</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Organisation Setup</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Clicked user policy for user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: opened authorization policy page for the user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: IPD policy clicked<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Schedule Emergency IP Admission Access
+Authorized:    YES<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Patient name - Mr. Mark <br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: <font color='blue'>Validated Schedule Emergency IP Admission Access is enabled for the user</font><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+</div>
+</td>
+<td></td>
+<td>110</td>
+<td>tests.authorizationpolicy.ipd.ScheduleAdmissionPolicyTest@5949eba8</td></tr>
+<tr>
+<td title='tests.authorizationpolicy.ipd.PatientFlowPolicyTest.validatePolicy_markAsDone()'><b>validatePolicy_markAsDone</b><br>Test class: tests.authorizationpolicy.ipd.PatientFlowPolicyTest<br>Test method: Validate Mark as OT done access<br/>
+<a href="#Output-872840741" onClick='toggleBox("Output-872840741", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-872840741" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-872840741">
+Test Case Description: Expected User is Logged in - <b>Dr. Akash Jajee</b> .Current User is Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option <b>Organisation Settings</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>General</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Organisation Setup</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Clicked user policy for user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: opened authorization policy page for the user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: IPD policy clicked<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Mark as OT done access
+Authorized:    NO<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option <b>Organisation Settings</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>General</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Organisation Setup</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: OT department is selected.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Expected User is Logged in - <b>Dr. Akash Jajee</b> .Current User is Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: IPD department is selected.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Expected User is Logged in - <b>Dr. Akash Jajee</b> .Current User is Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: OPD department is selected.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Patient name - Mr. Mark <br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Patient name - Mr. Mark <br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Application not loaded in the browserjava.lang.Exception: Element not clicked org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//select[@name='admission[ward_id]']"}
+  (Session info: chrome=119.0.6045.107)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'SPZMUMLAP0011', ip: '192.168.1.4', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ca034e8065c6697608ada1cb8fc83abe, findElement {using=xpath, value=//select[@name='admission[ward_id]']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.107, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\praveenikkr\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60765}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60765/devtoo..., se:cdpVersion: 119.0.6045.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ca034e8065c6697608ada1cb8fc83abe<br/>
+TEST Case Failed ->Application not loaded in the browserjava.lang.Exception: Element not clicked org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//select[@name='admission[ward_id]']"}
+  (Session info: chrome=119.0.6045.107)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'SPZMUMLAP0011', ip: '192.168.1.4', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ca034e8065c6697608ada1cb8fc83abe, findElement {using=xpath, value=//select[@name='admission[ward_id]']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.107, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\praveenikkr\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60765}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60765/devtoo..., se:cdpVersion: 119.0.6045.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ca034e8065c6697608ada1cb8fc83abe expected [true] but found [false]<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: OT department is selected.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Unable to validate Mark as OT done access ->java.lang.Exception: Element not clicked org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='Delete OT']"}
+  (Session info: chrome=119.0.6045.107)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'SPZMUMLAP0011', ip: '192.168.1.4', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ca034e8065c6697608ada1cb8fc83abe, findElement {using=xpath, value=//a[text()='Delete OT']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.107, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\praveenikkr\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60765}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60765/devtoo..., se:cdpVersion: 119.0.6045.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ca034e8065c6697608ada1cb8fc83abe<br/>
+TEST Case Failed ->Unable to validate Mark as OT done access ->java.lang.Exception: Element not clicked org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='Delete OT']"}
+  (Session info: chrome=119.0.6045.107)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'SPZMUMLAP0011', ip: '192.168.1.4', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ca034e8065c6697608ada1cb8fc83abe, findElement {using=xpath, value=//a[text()='Delete OT']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.107, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\praveenikkr\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60765}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60765/devtoo..., se:cdpVersion: 119.0.6045.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ca034e8065c6697608ada1cb8fc83abe expected [true] but found [false]<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+</div>
+</td>
+<td></td>
+<td>251</td>
+<td>tests.authorizationpolicy.ipd.PatientFlowPolicyTest@1cfd1875</td></tr>
+<tr>
+<td title='tests.authorizationpolicy.ipd.PatientFlowPolicyTest.validatePolicy_engageOt()'><b>validatePolicy_engageOt</b><br>Test class: tests.authorizationpolicy.ipd.PatientFlowPolicyTest<br>Test method: Validate Engage OT access<br/>
+<a href="#Output-1385748368" onClick='toggleBox("Output-1385748368", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1385748368" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1385748368">
+Test Case Description: Expected User is Logged in - <b>Dr. Akash Jajee</b> .Current User is Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option <b>Organisation Settings</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>General</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Organisation Setup</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Clicked user policy for user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: opened authorization policy page for the user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: IPD policy clicked<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Engage OT access
+Authorized:    NO<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option <b>Organisation Settings</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>General</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Organisation Setup</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: OT department is selected.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Expected User is Logged in - <b>Dr. Akash Jajee</b> .Current User is Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: IPD department is selected.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Expected User is Logged in - <b>Dr. Akash Jajee</b> .Current User is Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: OPD department is selected.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Patient name - Mr. Mark <br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Patient name - Mr. Mark <br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Application not loaded in the browserjava.lang.Exception: Element not clicked org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//select[@name='admission[ward_id]']"}
+  (Session info: chrome=119.0.6045.107)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'SPZMUMLAP0011', ip: '192.168.1.4', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ca034e8065c6697608ada1cb8fc83abe, findElement {using=xpath, value=//select[@name='admission[ward_id]']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.107, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\praveenikkr\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60765}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60765/devtoo..., se:cdpVersion: 119.0.6045.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ca034e8065c6697608ada1cb8fc83abe<br/>
+TEST Case Failed ->Application not loaded in the browserjava.lang.Exception: Element not clicked org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//select[@name='admission[ward_id]']"}
+  (Session info: chrome=119.0.6045.107)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'SPZMUMLAP0011', ip: '192.168.1.4', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ca034e8065c6697608ada1cb8fc83abe, findElement {using=xpath, value=//select[@name='admission[ward_id]']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.107, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\praveenikkr\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60765}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60765/devtoo..., se:cdpVersion: 119.0.6045.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ca034e8065c6697608ada1cb8fc83abe expected [true] but found [false]<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: OT department is selected.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Unable to validate Engage OT access ->java.lang.Exception: Element not clicked org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='Delete OT']"}
+  (Session info: chrome=119.0.6045.107)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'SPZMUMLAP0011', ip: '192.168.1.4', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ca034e8065c6697608ada1cb8fc83abe, findElement {using=xpath, value=//a[text()='Delete OT']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.107, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\praveenikkr\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60765}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60765/devtoo..., se:cdpVersion: 119.0.6045.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ca034e8065c6697608ada1cb8fc83abe<br/>
+TEST Case Failed ->Unable to validate Engage OT access ->java.lang.Exception: Element not clicked org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='Delete OT']"}
+  (Session info: chrome=119.0.6045.107)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'SPZMUMLAP0011', ip: '192.168.1.4', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ca034e8065c6697608ada1cb8fc83abe, findElement {using=xpath, value=//a[text()='Delete OT']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.107, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\praveenikkr\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60765}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60765/devtoo..., se:cdpVersion: 119.0.6045.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ca034e8065c6697608ada1cb8fc83abe expected [true] but found [false]<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+</div>
+</td>
+<td></td>
+<td>248</td>
+<td>tests.authorizationpolicy.ipd.PatientFlowPolicyTest@1cfd1875</td></tr>
+<tr>
+<td title='tests.authorizationpolicy.ipd.PatientFlowPolicyTest.validatePolicy_admitPatient()'><b>validatePolicy_admitPatient</b><br>Test class: tests.authorizationpolicy.ipd.PatientFlowPolicyTest<br>Test method: Validate Admit patient access<br/>
+<a href="#Output-511830984" onClick='toggleBox("Output-511830984", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-511830984" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-511830984">
+Test Case Description: Clicked user policy for user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: opened authorization policy page for the user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: IPD policy clicked<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Admit patient access
+Authorized:    NO<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option <b>Organisation Settings</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>General</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Organisation Setup</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Expected User is Logged in - <b>Dr. Akash Jajee</b> .Current User is Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: IPD department is selected.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Expected User is Logged in - <b>Dr. Akash Jajee</b> .Current User is Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: OPD department is selected.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Patient name - Mr. Mark <br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Patient name - Mr. Mark <br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Application not loaded in the browserjava.lang.Exception: Element not clicked org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//select[@name='admission[ward_id]']"}
+  (Session info: chrome=119.0.6045.107)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'SPZMUMLAP0011', ip: '192.168.1.4', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ca034e8065c6697608ada1cb8fc83abe, findElement {using=xpath, value=//select[@name='admission[ward_id]']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.107, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\praveenikkr\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60765}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60765/devtoo..., se:cdpVersion: 119.0.6045.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ca034e8065c6697608ada1cb8fc83abe<br/>
+TEST Case Failed ->Application not loaded in the browserjava.lang.Exception: Element not clicked org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//select[@name='admission[ward_id]']"}
+  (Session info: chrome=119.0.6045.107)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'SPZMUMLAP0011', ip: '192.168.1.4', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ca034e8065c6697608ada1cb8fc83abe, findElement {using=xpath, value=//select[@name='admission[ward_id]']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.107, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\praveenikkr\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60765}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60765/devtoo..., se:cdpVersion: 119.0.6045.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ca034e8065c6697608ada1cb8fc83abe expected [true] but found [false]<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: <font color='blue'>Validated Admit patient access is disabled for the user</font><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Expected User is Logged in - <b>Dr. Akash Jajee</b> .Current User is Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option <b>Organisation Settings</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>General</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Organisation Setup</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Clicked user policy for user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: opened authorization policy page for the user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: IPD policy clicked<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Admit patient access
+Authorized:    YES<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+<font color='blue'>Validated Admit patient access is enabled for the user</font><br/>
+Test Case Description: <font color='blue'>Validated Admit patient access is enabled for the user</font><br/>
+TEST Case Failed -><font color='blue'>Validated Admit patient access is enabled for the user</font> expected [true] but found [false]<br/>
+Expected: true<br/>
+Actual: false<br/>
+<br/>
+</div>
+</td>
+<td></td>
+<td>246</td>
+<td>tests.authorizationpolicy.ipd.PatientFlowPolicyTest@1cfd1875</td></tr>
+<tr>
+<td title='tests.authorizationpolicy.ipd.PatientFlowPolicyTest.validatePolicy_readyForAdmission()'><b>validatePolicy_readyForAdmission</b><br>Test class: tests.authorizationpolicy.ipd.PatientFlowPolicyTest<br>Test method: Validate Mark Ready for Admission access<br/>
+<a href="#Output-2094459357" onClick='toggleBox("Output-2094459357", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2094459357" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2094459357">
+Test Case Description: Clicked user policy for user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: opened authorization policy page for the user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: IPD policy clicked<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Mark Ready for Admission access
+Authorized:    NO<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option <b>Organisation Settings</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>General</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Organisation Setup</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Expected User is Logged in - <b>Dr. Akash Jajee</b> .Current User is Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: IPD department is selected.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Expected User is Logged in - <b>Dr. Akash Jajee</b> .Current User is Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: OPD department is selected.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Patient name - Mr. Mark <br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Patient name - Mr. Mark <br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Application not loaded in the browserjava.lang.Exception: Element not clicked org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//select[@name='admission[ward_id]']"}
+  (Session info: chrome=119.0.6045.107)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'SPZMUMLAP0011', ip: '192.168.1.4', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ca034e8065c6697608ada1cb8fc83abe, findElement {using=xpath, value=//select[@name='admission[ward_id]']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.107, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\praveenikkr\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60765}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60765/devtoo..., se:cdpVersion: 119.0.6045.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ca034e8065c6697608ada1cb8fc83abe<br/>
+TEST Case Failed ->Application not loaded in the browserjava.lang.Exception: Element not clicked org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//select[@name='admission[ward_id]']"}
+  (Session info: chrome=119.0.6045.107)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'SPZMUMLAP0011', ip: '192.168.1.4', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ca034e8065c6697608ada1cb8fc83abe, findElement {using=xpath, value=//select[@name='admission[ward_id]']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.107, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\praveenikkr\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60765}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60765/devtoo..., se:cdpVersion: 119.0.6045.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ca034e8065c6697608ada1cb8fc83abe expected [true] but found [false]<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: <font color='blue'>Validated Mark Ready for Admission access is disabled for the user</font><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Expected User is Logged in - <b>Dr. Akash Jajee</b> .Current User is Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option <b>Organisation Settings</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>General</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Organisation Setup</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Clicked user policy for user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: opened authorization policy page for the user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: IPD policy clicked<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Mark Ready for Admission access
+Authorized:    YES<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+<font color='blue'>Validated Mark Ready for Admission access is enabled for the user</font><br/>
+Test Case Description: <font color='blue'>Validated Mark Ready for Admission access is enabled for the user</font><br/>
+TEST Case Failed -><font color='blue'>Validated Mark Ready for Admission access is enabled for the user</font> expected [true] but found [false]<br/>
+Expected: true<br/>
+Actual: false<br/>
+<br/>
+</div>
+</td>
+<td></td>
+<td>239</td>
+<td>tests.authorizationpolicy.ipd.PatientFlowPolicyTest@1cfd1875</td></tr>
+<tr>
+<td title='tests.authorizationpolicy.ipd.PatientFlowPolicyTest.validatePolicy_billingClearance()'><b>validatePolicy_billingClearance</b><br>Test class: tests.authorizationpolicy.ipd.PatientFlowPolicyTest<br>Test method: Validate Give Billing Clearance access<br/>
+<a href="#Output-1602445288" onClick='toggleBox("Output-1602445288", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1602445288" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1602445288">
+Test Case Description: Clicked user policy for user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: opened authorization policy page for the user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: IPD policy clicked<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Give Billing Clearence access
+Authorized:    NO<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option <b>Organisation Settings</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>General</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Organisation Setup</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option <b>Organisation Settings</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>General</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Organisation Setup</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option <b>Finance Settings</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Expected User is Logged in - <b>Dr. Akash Jajee</b> .Current User is Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: IPD department is selected.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Expected User is Logged in - <b>Dr. Akash Jajee</b> .Current User is Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: OPD department is selected.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Patient name - Mr. Mark <br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Patient name - Mr. Mark <br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Application not loaded in the browserjava.lang.Exception: Element not clicked org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//select[@name='admission[ward_id]']"}
+  (Session info: chrome=119.0.6045.107)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'SPZMUMLAP0011', ip: '192.168.1.4', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ca034e8065c6697608ada1cb8fc83abe, findElement {using=xpath, value=//select[@name='admission[ward_id]']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.107, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\praveenikkr\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60765}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60765/devtoo..., se:cdpVersion: 119.0.6045.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ca034e8065c6697608ada1cb8fc83abe<br/>
+TEST Case Failed ->Application not loaded in the browserjava.lang.Exception: Element not clicked org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//select[@name='admission[ward_id]']"}
+  (Session info: chrome=119.0.6045.107)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'SPZMUMLAP0011', ip: '192.168.1.4', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ca034e8065c6697608ada1cb8fc83abe, findElement {using=xpath, value=//select[@name='admission[ward_id]']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.107, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\praveenikkr\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60765}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60765/devtoo..., se:cdpVersion: 119.0.6045.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ca034e8065c6697608ada1cb8fc83abe expected [true] but found [false]<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: <font color='blue'>Validated Give Billing Clearence access is disabled for the user</font><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Expected User is Logged in - <b>Dr. Akash Jajee</b> .Current User is Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option <b>Organisation Settings</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>General</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Organisation Setup</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Clicked user policy for user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: opened authorization policy page for the user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: IPD policy clicked<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Give Billing Clearence access
+Authorized:    YES<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+<font color='blue'>Validated Give Billing Clearence access is enabled for the user</font><br/>
+Test Case Description: <font color='blue'>Validated Give Billing Clearence access is enabled for the user</font><br/>
+TEST Case Failed -><font color='blue'>Validated Give Billing Clearence access is enabled for the user</font> expected [true] but found [false]<br/>
+Expected: true<br/>
+Actual: false<br/>
+<br/>
+</div>
+</td>
+<td></td>
+<td>287</td>
+<td>tests.authorizationpolicy.ipd.PatientFlowPolicyTest@1cfd1875</td></tr>
+<tr>
+<td title='tests.authorizationpolicy.ipd.PatientFlowPolicyTest.validatePolicy_undoReadyForAdmission()'><b>validatePolicy_undoReadyForAdmission</b><br>Test class: tests.authorizationpolicy.ipd.PatientFlowPolicyTest<br>Test method: Validate Ready for Admission Undo access<br/>
+<a href="#Output-1887577939" onClick='toggleBox("Output-1887577939", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1887577939" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1887577939">
+Test Case Description: Expected User is Logged in - <b>Dr. Akash Jajee</b> .Current User is Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option <b>Organisation Settings</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>General</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Organisation Setup</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Clicked user policy for user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: opened authorization policy page for the user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: IPD policy clicked<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Ready for Admission Undo access
+Authorized:    NO<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option <b>Organisation Settings</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>General</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Organisation Setup</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Expected User is Logged in - <b>Dr. Akash Jajee</b> .Current User is Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: IPD department is selected.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Expected User is Logged in - <b>Dr. Akash Jajee</b> .Current User is Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: OPD department is selected.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Patient name - Mr. Mark <br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Patient name - Mr. Mark <br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Application not loaded in the browserjava.lang.Exception: Element not clicked org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//select[@name='admission[ward_id]']"}
+  (Session info: chrome=119.0.6045.107)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'SPZMUMLAP0011', ip: '192.168.1.4', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ca034e8065c6697608ada1cb8fc83abe, findElement {using=xpath, value=//select[@name='admission[ward_id]']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.107, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\praveenikkr\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60765}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60765/devtoo..., se:cdpVersion: 119.0.6045.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ca034e8065c6697608ada1cb8fc83abe<br/>
+TEST Case Failed ->Application not loaded in the browserjava.lang.Exception: Element not clicked org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//select[@name='admission[ward_id]']"}
+  (Session info: chrome=119.0.6045.107)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'SPZMUMLAP0011', ip: '192.168.1.4', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ca034e8065c6697608ada1cb8fc83abe, findElement {using=xpath, value=//select[@name='admission[ward_id]']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.107, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\praveenikkr\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60765}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60765/devtoo..., se:cdpVersion: 119.0.6045.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ca034e8065c6697608ada1cb8fc83abe expected [true] but found [false]<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: <font color='blue'>Validated Ready for Admission Undo access is disabled for the user</font><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Expected User is Logged in - <b>Dr. Akash Jajee</b> .Current User is Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option <b>Organisation Settings</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>General</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Organisation Setup</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Clicked user policy for user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: opened authorization policy page for the user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: IPD policy clicked<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Ready for Admission Undo access
+Authorized:    YES<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+<font color='blue'>Validated Ready for Admission Undo access is enabled for the user</font><br/>
+Test Case Description: <font color='blue'>Validated Ready for Admission Undo access is enabled for the user</font><br/>
+TEST Case Failed -><font color='blue'>Validated Ready for Admission Undo access is enabled for the user</font> expected [true] but found [false]<br/>
+Expected: true<br/>
+Actual: false<br/>
+<br/>
+</div>
+</td>
+<td></td>
+<td>277</td>
+<td>tests.authorizationpolicy.ipd.PatientFlowPolicyTest@1cfd1875</td></tr>
+<tr>
+<td title='tests.authorizationpolicy.ipd.PatientFlowPolicyTest.validatePolicy_naPatient()'><b>validatePolicy_naPatient</b><br>Test class: tests.authorizationpolicy.ipd.PatientFlowPolicyTest<br>Test method: Validate Ready for Admission Undo access<br/>
+<a href="#Output-314913780" onClick='toggleBox("Output-314913780", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-314913780" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-314913780">
+Test Case Description: Expected User is Logged in - <b>Dr. Akash Jajee</b> .Current User is Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option <b>Organisation Settings</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>General</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Organisation Setup</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Clicked user policy for user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: opened authorization policy page for the user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: IPD policy clicked<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Mark as Not Admitted access
+Authorized:    NO<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option <b>Organisation Settings</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>General</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Organisation Setup</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Expected User is Logged in - <b>Dr. Akash Jajee</b> .Current User is Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: IPD department is selected.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Expected User is Logged in - <b>Dr. Akash Jajee</b> .Current User is Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: OPD department is selected.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Patient name - Mr. Mark <br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Patient name - Mr. Mark <br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Application not loaded in the browserjava.lang.Exception: Element not clicked org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//select[@name='admission[ward_id]']"}
+  (Session info: chrome=119.0.6045.107)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'SPZMUMLAP0011', ip: '192.168.1.4', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ca034e8065c6697608ada1cb8fc83abe, findElement {using=xpath, value=//select[@name='admission[ward_id]']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.107, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\praveenikkr\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60765}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60765/devtoo..., se:cdpVersion: 119.0.6045.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ca034e8065c6697608ada1cb8fc83abe<br/>
+TEST Case Failed ->Application not loaded in the browserjava.lang.Exception: Element not clicked org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//select[@name='admission[ward_id]']"}
+  (Session info: chrome=119.0.6045.107)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'SPZMUMLAP0011', ip: '192.168.1.4', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ca034e8065c6697608ada1cb8fc83abe, findElement {using=xpath, value=//select[@name='admission[ward_id]']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.107, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\praveenikkr\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60765}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60765/devtoo..., se:cdpVersion: 119.0.6045.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ca034e8065c6697608ada1cb8fc83abe expected [true] but found [false]<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: <font color='blue'>Validated Mark as Not Admitted access is disabled for the user</font><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Expected User is Logged in - <b>Dr. Akash Jajee</b> .Current User is Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option <b>Organisation Settings</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>General</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Organisation Setup</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Clicked user policy for user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: opened authorization policy page for the user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: IPD policy clicked<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Mark as Not Admitted access
+Authorized:    YES<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+<font color='blue'>Validated Mark as Not Admitted access is enabled for the user</font><br/>
+Test Case Description: <font color='blue'>Validated Mark as Not Admitted access is enabled for the user</font><br/>
+TEST Case Failed -><font color='blue'>Validated Mark as Not Admitted access is enabled for the user</font> expected [true] but found [false]<br/>
+Expected: true<br/>
+Actual: false<br/>
+<br/>
+</div>
+</td>
+<td></td>
+<td>287</td>
+<td>tests.authorizationpolicy.ipd.PatientFlowPolicyTest@1cfd1875</td></tr>
+<tr>
+<td title='tests.authorizationpolicy.ipd.PatientFlowPolicyTest.validatePolicy_sendPatientFlow()'><b>validatePolicy_sendPatientFlow</b><br>Test class: tests.authorizationpolicy.ipd.PatientFlowPolicyTest<br>Test method: Validate Send patient to other users access<br/>
+<a href="#Output-1672063869" onClick='toggleBox("Output-1672063869", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1672063869" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1672063869">
+Test Case Description: Clicked user policy for user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: opened authorization policy page for the user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: IPD policy clicked<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Send patient to other users access
+Authorized:    NO<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option <b>Organisation Settings</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>General</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Organisation Setup</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Expected User is Logged in - <b>Dr. Akash Jajee</b> .Current User is Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: IPD department is selected.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Patient name - Mr. Mark <br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Expected User is Logged in - <b>Dr. Akash Jajee</b> .Current User is Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: OPD department is selected.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Patient name - Mr. Mark <br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Patient name - Mr. Mark <br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Application not loaded in the browserjava.lang.Exception: Element not clicked org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//select[@name='admission[ward_id]']"}
+  (Session info: chrome=119.0.6045.107)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'SPZMUMLAP0011', ip: '192.168.1.4', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ca034e8065c6697608ada1cb8fc83abe, findElement {using=xpath, value=//select[@name='admission[ward_id]']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.107, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\praveenikkr\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60765}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60765/devtoo..., se:cdpVersion: 119.0.6045.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ca034e8065c6697608ada1cb8fc83abe<br/>
+TEST Case Failed ->Application not loaded in the browserjava.lang.Exception: Element not clicked org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//select[@name='admission[ward_id]']"}
+  (Session info: chrome=119.0.6045.107)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'SPZMUMLAP0011', ip: '192.168.1.4', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ca034e8065c6697608ada1cb8fc83abe, findElement {using=xpath, value=//select[@name='admission[ward_id]']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.107, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\praveenikkr\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60765}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60765/devtoo..., se:cdpVersion: 119.0.6045.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ca034e8065c6697608ada1cb8fc83abe expected [true] but found [false]<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: <font color='blue'>Validated Send patient to other users access is disabled for the user</font><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Expected User is Logged in - <b>Dr. Akash Jajee</b> .Current User is Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option <b>Organisation Settings</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>General</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Organisation Setup</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Clicked user policy for user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: opened authorization policy page for the user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: IPD policy clicked<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Send patient to other users access
+Authorized:    YES<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+<font color='blue'>Validated Send patient to other users access is enabled for the user</font><br/>
+Test Case Description: <font color='blue'>Validated Send patient to other users access is enabled for the user</font><br/>
+TEST Case Failed -><font color='blue'>Validated Send patient to other users access is enabled for the user</font> expected [true] but found [false]<br/>
+Expected: true<br/>
+Actual: false<br/>
+<br/>
+</div>
+</td>
+<td></td>
+<td>241</td>
+<td>tests.authorizationpolicy.ipd.PatientFlowPolicyTest@1cfd1875</td></tr>
+<tr>
+<td title='tests.authorizationpolicy.ipd.ScheduleAdmissionPolicyTest.validatePolicy_plannedAdmission()'><b>validatePolicy_plannedAdmission</b><br>Test class: tests.authorizationpolicy.ipd.ScheduleAdmissionPolicyTest<br>Test method: Schedule Planned IP Admission Access<br/>
+<a href="#Output-1558029640" onClick='toggleBox("Output-1558029640", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1558029640" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1558029640">
+Test Case Description: Expected User is Logged in - <b>Dr. Akash Jajee</b> .Current User is Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option <b>Organisation Settings</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>General</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Organisation Setup</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Clicked user policy for user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: opened authorization policy page for the user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: IPD policy clicked<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Schedule Planned IP Admission Access
+Authorized:    NO<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option <b>Organisation Settings</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>General</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Organisation Setup</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Expected User is Logged in - <b>Dr. Akash Jajee</b> .Current User is Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: OPD department is selected.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Patient name - Mr. Mark <br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: <font color='blue'>Validated Schedule Planned IP Admission Access is disabled for the user</font><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Expected User is Logged in - <b>Dr. Akash Jajee</b> .Current User is Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option <b>Organisation Settings</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>General</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Organisation Setup</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Clicked user policy for user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: opened authorization policy page for the user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: IPD policy clicked<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Schedule Planned IP Admission Access
+Authorized:    YES<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Patient name - Mr. Mark <br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: <font color='blue'>Validated Schedule Planned IP Admission Access is enabled for the user</font><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+</div>
+</td>
+<td></td>
+<td>132</td>
+<td>tests.authorizationpolicy.ipd.ScheduleAdmissionPolicyTest@5949eba8</td></tr>
+<tr>
+<td title='tests.authorizationpolicy.ipd.ScheduleAdmissionPolicyTest.validatePolicy_sameDayAdmission()'><b>validatePolicy_sameDayAdmission</b><br>Test class: tests.authorizationpolicy.ipd.ScheduleAdmissionPolicyTest<br>Test method: Schedule Same Day IP Admission Access<br/>
+<a href="#Output-1578971528" onClick='toggleBox("Output-1578971528", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1578971528" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1578971528">
+Test Case Description: Clicked user policy for user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: opened authorization policy page for the user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: IPD policy clicked<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Scheduled Same Day IP Admission Access
+Authorized:    NO<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option <b>Organisation Settings</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>General</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Organisation Setup</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Expected User is Logged in - <b>Dr. Akash Jajee</b> .Current User is Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: OPD department is selected.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Patient name - Mr. Mark <br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: <font color='blue'>Validated Scheduled Same Day IP Admission Access is disabled for the user</font><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Expected User is Logged in - <b>Dr. Akash Jajee</b> .Current User is Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option <b>Organisation Settings</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>General</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Organisation Setup</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Clicked user policy for user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: opened authorization policy page for the user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: IPD policy clicked<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Scheduled Same Day IP Admission Access
+Authorized:    YES<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Patient name - Mr. Mark <br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: <font color='blue'>Validated Scheduled Same Day IP Admission Access is enabled for the user</font><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+</div>
+</td>
+<td></td>
+<td>107</td>
+<td>tests.authorizationpolicy.ipd.ScheduleAdmissionPolicyTest@5949eba8</td></tr>
+<tr>
+<td title='tests.authorizationpolicy.ipd.PatientFlowPolicyTest.validatePolicy_dischargePatient()'><b>validatePolicy_dischargePatient</b><br>Test class: tests.authorizationpolicy.ipd.PatientFlowPolicyTest<br>Test method: Validate Discharge patient access<br/>
+<a href="#Output-1013491807" onClick='toggleBox("Output-1013491807", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1013491807" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1013491807">
+Test Case Description: Clicked user policy for user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: opened authorization policy page for the user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: IPD policy clicked<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Discharge Patient access
+Authorized:    NO<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option <b>Organisation Settings</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>General</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Organisation Setup</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Expected User is Logged in - <b>Dr. Akash Jajee</b> .Current User is Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: IPD department is selected.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Expected User is Logged in - <b>Dr. Akash Jajee</b> .Current User is Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: OPD department is selected.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Patient name - Mr. Mark <br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Patient name - Mr. Mark <br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Application not loaded in the browserjava.lang.Exception: Element not clicked org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//select[@name='admission[ward_id]']"}
+  (Session info: chrome=119.0.6045.107)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'SPZMUMLAP0011', ip: '192.168.1.4', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ca034e8065c6697608ada1cb8fc83abe, findElement {using=xpath, value=//select[@name='admission[ward_id]']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.107, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\praveenikkr\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60765}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60765/devtoo..., se:cdpVersion: 119.0.6045.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ca034e8065c6697608ada1cb8fc83abe<br/>
+TEST Case Failed ->Application not loaded in the browserjava.lang.Exception: Element not clicked org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//select[@name='admission[ward_id]']"}
+  (Session info: chrome=119.0.6045.107)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'SPZMUMLAP0011', ip: '192.168.1.4', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ca034e8065c6697608ada1cb8fc83abe, findElement {using=xpath, value=//select[@name='admission[ward_id]']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.107, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\praveenikkr\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60765}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60765/devtoo..., se:cdpVersion: 119.0.6045.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ca034e8065c6697608ada1cb8fc83abe expected [true] but found [false]<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: <font color='blue'>Validated Discharge Patient access is disabled for the user</font><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Expected User is Logged in - <b>Dr. Akash Jajee</b> .Current User is Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option <b>Organisation Settings</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>General</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Organisation Setup</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Clicked user policy for user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: opened authorization policy page for the user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: IPD policy clicked<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Discharge Patient access
+Authorized:    YES<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+<font color='blue'>Validated Discharge Patient access is enabled for the user</font><br/>
+Test Case Description: <font color='blue'>Validated Discharge Patient access is enabled for the user</font><br/>
+TEST Case Failed -><font color='blue'>Validated Discharge Patient access is enabled for the user</font> expected [true] but found [false]<br/>
+Expected: true<br/>
+Actual: false<br/>
+<br/>
+</div>
+</td>
+<td></td>
+<td>250</td>
+<td>tests.authorizationpolicy.ipd.PatientFlowPolicyTest@1cfd1875</td></tr>
+<tr>
+<td title='tests.authorizationpolicy.ipd.PatientFlowPolicyTest.validatePolicy_editAdmissionDateAndTime()'><b>validatePolicy_editAdmissionDateAndTime</b><br>Test class: tests.authorizationpolicy.ipd.PatientFlowPolicyTest<br>Test method: Validate Admission Date and Time Edit access<br/>
+<a href="#Output-2088098477" onClick='toggleBox("Output-2088098477", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2088098477" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2088098477">
+Test Case Description: Clicked user policy for user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: opened authorization policy page for the user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: IPD policy clicked<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Admission Date and Time Edit access
+Authorized:    NO<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option <b>Organisation Settings</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>General</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Organisation Setup</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Expected User is Logged in - <b>Dr. Akash Jajee</b> .Current User is Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: OPD department is selected.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Patient name - Mr. Mark <br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Patient name - Mr. Mark <br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Application not loaded in the browserjava.lang.Exception: Element not clicked org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//select[@name='admission[ward_id]']"}
+  (Session info: chrome=119.0.6045.107)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'SPZMUMLAP0011', ip: '192.168.1.4', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ca034e8065c6697608ada1cb8fc83abe, findElement {using=xpath, value=//select[@name='admission[ward_id]']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.107, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\praveenikkr\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60765}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60765/devtoo..., se:cdpVersion: 119.0.6045.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ca034e8065c6697608ada1cb8fc83abe<br/>
+TEST Case Failed ->Application not loaded in the browserjava.lang.Exception: Element not clicked org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//select[@name='admission[ward_id]']"}
+  (Session info: chrome=119.0.6045.107)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'SPZMUMLAP0011', ip: '192.168.1.4', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ca034e8065c6697608ada1cb8fc83abe, findElement {using=xpath, value=//select[@name='admission[ward_id]']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.107, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\praveenikkr\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60765}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60765/devtoo..., se:cdpVersion: 119.0.6045.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ca034e8065c6697608ada1cb8fc83abe expected [true] but found [false]<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Unable to validate Admission Date and Time Edit access ->java.lang.Exception: Element not clicked org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()=' Ready for Admission ']"}
+  (Session info: chrome=119.0.6045.107)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'SPZMUMLAP0011', ip: '192.168.1.4', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ca034e8065c6697608ada1cb8fc83abe, findElement {using=xpath, value=//a[text()=' Ready for Admission ']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.107, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\praveenikkr\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60765}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60765/devtoo..., se:cdpVersion: 119.0.6045.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ca034e8065c6697608ada1cb8fc83abe<br/>
+TEST Case Failed ->Unable to validate Admission Date and Time Edit access ->java.lang.Exception: Element not clicked org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()=' Ready for Admission ']"}
+  (Session info: chrome=119.0.6045.107)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'SPZMUMLAP0011', ip: '192.168.1.4', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ca034e8065c6697608ada1cb8fc83abe, findElement {using=xpath, value=//a[text()=' Ready for Admission ']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.107, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\praveenikkr\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60765}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60765/devtoo..., se:cdpVersion: 119.0.6045.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ca034e8065c6697608ada1cb8fc83abe expected [true] but found [false]<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+</div>
+</td>
+<td></td>
+<td>100</td>
+<td>tests.authorizationpolicy.ipd.PatientFlowPolicyTest@1cfd1875</td></tr>
+<tr>
+<td title='tests.authorizationpolicy.ipd.PatientFlowPolicyTest.validatePolicy_sendToWard()'><b>validatePolicy_sendToWard</b><br>Test class: tests.authorizationpolicy.ipd.PatientFlowPolicyTest<br>Test method: Validate Send Patients to Ward department access<br/>
+<a href="#Output-931205082" onClick='toggleBox("Output-931205082", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-931205082" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-931205082">
+Test Case Description: Expected User is Logged in - <b>Dr. Akash Jajee</b> .Current User is Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option <b>Organisation Settings</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>General</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Organisation Setup</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Clicked user policy for user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: opened authorization policy page for the user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: IPD policy clicked<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Sending Patient to Ward Access
+Authorized:    NO<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option <b>Organisation Settings</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>General</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Organisation Setup</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: OT department is selected.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Expected User is Logged in - <b>Dr. Akash Jajee</b> .Current User is Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: IPD department is selected.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Expected User is Logged in - <b>Dr. Akash Jajee</b> .Current User is Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: OPD department is selected.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Patient name - Mr. Mark <br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Patient name - Mr. Mark <br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Application not loaded in the browserjava.lang.Exception: Element not clicked org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//select[@name='admission[ward_id]']"}
+  (Session info: chrome=119.0.6045.107)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'SPZMUMLAP0011', ip: '192.168.1.4', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ca034e8065c6697608ada1cb8fc83abe, findElement {using=xpath, value=//select[@name='admission[ward_id]']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.107, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\praveenikkr\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60765}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60765/devtoo..., se:cdpVersion: 119.0.6045.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ca034e8065c6697608ada1cb8fc83abe<br/>
+TEST Case Failed ->Application not loaded in the browserjava.lang.Exception: Element not clicked org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//select[@name='admission[ward_id]']"}
+  (Session info: chrome=119.0.6045.107)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'SPZMUMLAP0011', ip: '192.168.1.4', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ca034e8065c6697608ada1cb8fc83abe, findElement {using=xpath, value=//select[@name='admission[ward_id]']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.107, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\praveenikkr\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60765}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60765/devtoo..., se:cdpVersion: 119.0.6045.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ca034e8065c6697608ada1cb8fc83abe expected [true] but found [false]<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: OT department is selected.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Unable to validate Sending Patient to Ward Access ->java.lang.Exception: Element not clicked org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='Delete OT']"}
+  (Session info: chrome=119.0.6045.107)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'SPZMUMLAP0011', ip: '192.168.1.4', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ca034e8065c6697608ada1cb8fc83abe, findElement {using=xpath, value=//a[text()='Delete OT']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.107, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\praveenikkr\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60765}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60765/devtoo..., se:cdpVersion: 119.0.6045.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ca034e8065c6697608ada1cb8fc83abe<br/>
+TEST Case Failed ->Unable to validate Sending Patient to Ward Access ->java.lang.Exception: Element not clicked org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='Delete OT']"}
+  (Session info: chrome=119.0.6045.107)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'SPZMUMLAP0011', ip: '192.168.1.4', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ca034e8065c6697608ada1cb8fc83abe, findElement {using=xpath, value=//a[text()='Delete OT']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.107, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\praveenikkr\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60765}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60765/devtoo..., se:cdpVersion: 119.0.6045.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ca034e8065c6697608ada1cb8fc83abe expected [true] but found [false]<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+</div>
+</td>
+<td></td>
+<td>242</td>
+<td>tests.authorizationpolicy.ipd.PatientFlowPolicyTest@1cfd1875</td></tr>
+<tr>
+<td title='tests.authorizationpolicy.ipd.PatientFlowPolicyTest.validatePolicy_readyForOt()'><b>validatePolicy_readyForOt</b><br>Test class: tests.authorizationpolicy.ipd.PatientFlowPolicyTest<br>Test method: Validate Ready for OT access<br/>
+<a href="#Output-1065402364" onClick='toggleBox("Output-1065402364", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1065402364" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1065402364">
+Test Case Description: Clicked user policy for user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: opened authorization policy page for the user : Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: IPD policy clicked<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Ready for OT access
+Authorized:    NO<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option <b>Organisation Settings</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>General</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Organisation Setup</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: OT department is selected.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Expected User is Logged in - <b>Dr. Akash Jajee</b> .Current User is Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: IPD department is selected.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Expected User is Logged in - <b>Dr. Akash Jajee</b> .Current User is Dr. Akash Jajee<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: OPD department is selected.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Patient name - Mr. Mark <br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Patient name - Mr. Mark <br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Application not loaded in the browserjava.lang.Exception: Element not clicked org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//select[@name='admission[ward_id]']"}
+  (Session info: chrome=119.0.6045.107)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'SPZMUMLAP0011', ip: '192.168.1.4', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ca034e8065c6697608ada1cb8fc83abe, findElement {using=xpath, value=//select[@name='admission[ward_id]']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.107, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\praveenikkr\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60765}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60765/devtoo..., se:cdpVersion: 119.0.6045.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ca034e8065c6697608ada1cb8fc83abe<br/>
+TEST Case Failed ->Application not loaded in the browserjava.lang.Exception: Element not clicked org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//select[@name='admission[ward_id]']"}
+  (Session info: chrome=119.0.6045.107)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'SPZMUMLAP0011', ip: '192.168.1.4', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ca034e8065c6697608ada1cb8fc83abe, findElement {using=xpath, value=//select[@name='admission[ward_id]']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.107, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\praveenikkr\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60765}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60765/devtoo..., se:cdpVersion: 119.0.6045.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ca034e8065c6697608ada1cb8fc83abe expected [true] but found [false]<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: OT department is selected.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Unable to validate Ready for OT access ->java.lang.Exception: Element not clicked org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='Delete OT']"}
+  (Session info: chrome=119.0.6045.107)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'SPZMUMLAP0011', ip: '192.168.1.4', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ca034e8065c6697608ada1cb8fc83abe, findElement {using=xpath, value=//a[text()='Delete OT']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.107, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\praveenikkr\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60765}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60765/devtoo..., se:cdpVersion: 119.0.6045.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ca034e8065c6697608ada1cb8fc83abe<br/>
+TEST Case Failed ->Unable to validate Ready for OT access ->java.lang.Exception: Element not clicked org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='Delete OT']"}
+  (Session info: chrome=119.0.6045.107)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'SPZMUMLAP0011', ip: '192.168.1.4', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ca034e8065c6697608ada1cb8fc83abe, findElement {using=xpath, value=//a[text()='Delete OT']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.107, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\praveenikkr\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60765}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60765/devtoo..., se:cdpVersion: 119.0.6045.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ca034e8065c6697608ada1cb8fc83abe expected [true] but found [false]<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+</div>
+</td>
+<td></td>
+<td>223</td>
+<td>tests.authorizationpolicy.ipd.PatientFlowPolicyTest@1cfd1875</td></tr>
+</table><p>
+</body>
+</html>

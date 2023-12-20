@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Appenders>
+        <!-- Simple console logger -->
+        <Console name="LogToConsole" target="SYSTEM_OUT">
+            <!-- <Filters>
+                <ThresholdFilter level="ERROR" onMatch="ACCEPT" onMismatch="DENY"/>
+                <ThresholdFilter level="FATAL" onMatch="DENY" onMismatch="NEUTRAL" />
+            </Filters> -->
+
+            <Filters>
+                <!-- Reject fatal messages -->
+                <ThresholdFilter level="fatal" onMatch="DENY" onMismatch="NEUTRAL"/>
+
+                <!-- Reject Warn messages -->
+                <!-- <ThresholdFilter level="warn"  onMatch="DENY"   onMismatch="NEUTRAL"/> -->
+
+                <!-- This filter accepts debug, trace, info, error  -->
+                <ThresholdFilter level="trace" onMatch="ACCEPT" onMismatch="DENY"/>
+            </Filters>
+            <!-- <PatternLayout pattern="[%-5level] %d{dd-MMM-yyyy hh:mm:ss.SSS aa} | %c - %m%n" /> -->
+            <PatternLayout pattern="[%-5level] %d{dd-MMM-yyyy hh:mm:ss.SSS aa} | %c - %m%n"/>
+
+        </Console>
+
+        <File name="File" fileName="./logs/app.log" append="true">
+            <PatternLayout
+                    pattern="[%-5level] %d{dd-MMM-yyyy hh:mm:ss.SSS aa} | %c - %m%n"/>
+            <!-- <HTMLLayout> </HTMLLayout> -->
+        </File>
+
+
+        <RollingFile name="RollingFile" fileName="logs/app.log"
+                     filePattern="Logs/$${date:MMM_yyyy}/log_%d{dd_MMM}-%i.log.gz">
+            <ThresholdFilter level="INFO" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout>
+                <Pattern>[%-5level] %d{dd-MMM-yyyy hh:mm:ss.SSS aa} | %c - %m%n</Pattern>
+                <!-- <Pattern>[%-5level],%d{dd-MMM-yyyy hh:mm:ss.SSS aa},%c,%m%n</Pattern> -->
+            </PatternLayout>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="10MB"/>
+            </Policies>
+            <!-- Max no. of files to keep -->
+            <DefaultRolloverStrategy max="20"/>
+        </RollingFile>
+
+        <!-- In Case want to upload logs to server/remote storage, then add in Loggers -->
+        <Syslog name="Syslog"
+                host="logsene-syslog-receiver.sematext.com" port="514" protocol="TCP"
+                format="RFC5424" appName="ab6253c2-f76s-23s1-5dwx-d221dswf232s"
+                facility="LOCAL0" mdcId="mdc" newLine="true"/>
+    </Appenders>
+
+    <Loggers>
+
+        <Root level="info">
+
+            <AppenderRef ref="LogToConsole"/>
+            <!-- <AppenderRef ref="File" /> -->
+            <AppenderRef ref="RollingFile"/>
+
+        </Root>
+    </Loggers>
+</Configuration>

@@ -1,0 +1,206 @@
+<html>
+<head>
+<title>TestNG:  Smoke_Scripts</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Smoke_Scripts</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Dec 20 13:57:55 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>52 seconds (52039 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.departments.opd.AddPatientsTest.validateAndFillEssentialPatientDetails()'><b>validateAndFillEssentialPatientDetails</b><br>Test class: tests.departments.opd.AddPatientsTest<br>Test method: Validate Essential Details are filled in Create New Patient<br/>
+<a href="#Output-933489703" onClick='toggleBox("Output-933489703", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-933489703" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-933489703">
+Test Case Description: Validate Login successful<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected the Facility - <b>TESTING_FACILITY - TST</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Logged In User = PR.Akash test<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: The Facility - <b>TST</b> is already selected.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option <b>Organisation Settings</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>General</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Patient Settings</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected mandatory field in Patient setting are First Name, Mobile Number<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: OPD department is selected.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: <b>Add</b> Appointment Button is clicked<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Add New Patient Button is displayed<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: <b>Add New Patient</b> Button is clicked<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: No. of Tabs on Patient Reg. & Appointment Form is 4<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Patient Details Tab is selected on start by default.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Patient Details Tab is displayed on the form.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Other Details Tab is displayed on the form.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: History Tab is displayed on the form.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Allergies Tab is displayed on the form.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Alert for compulsory field is visible by default on the empty form.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Validate that the Compulsory sections message is First Name and Mobile Number are Compulsory.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Alert for compulsory field is highlighted in <b>Red</b> when trying to Create Appointment with empty form. Message = First Name and Mobile Number are Compulsory.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: First Name is visible in the Compulsory Fields alert message.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Mobile Number is visible in the Compulsory Fields alert message.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Salutation for Patient is selected as - Mr.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: First Name is entered as - Elon<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Middle Name is entered as - <br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Last Name is entered as - <br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Mobile Number is entered as - 1234567890<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: MRNfytdg entered for Medical Report Number<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+</div>
+</td>
+<td></td>
+<td>39</td>
+<td>tests.departments.opd.AddPatientsTest@1eea9d2d</td></tr>
+</table><p>
+</body>
+</html>

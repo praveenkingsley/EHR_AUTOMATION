@@ -1,0 +1,352 @@
+<html>
+<head>
+<title>TestNG:  SampleTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>SampleTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>5/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Jul 31 17:54:24 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>208 seconds (208721 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.inventoryStores.opticalStore.Transaction.PurchaseBillTest.validateCreatePurchaseBillWithGrn()'><b>validateCreatePurchaseBillWithGrn</b><br>Test class: tests.inventoryStores.opticalStore.Transaction.PurchaseBillTest<br>Test method: Validating Create Purchase Bill<br/>
+<a href="#Output-177849388" onClick='toggleBox("Output-177849388", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-177849388" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-177849388">
+Test Case Description: The Facility - <b>TST</b> is already selected.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option <b>Organisation Settings</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>Inventory & Supply Chain</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Store Setup</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: GST no. present in Pharmacy automation is <b>20BAC</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>Inventory & Supply Chain</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Vendor Master</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: GST no. present in Supplier ABC is <b>21EAC</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Pharmacy automation- Pharmacy store is selected.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Store pop up closed<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>Transaction</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Purchase/GRN</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Item not selected<br/>
+TEST Case Failed ->Item not selected expected [true] but found [false]<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Bill Type as <b>Bill</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Entered<b> BILL_512746</b> in Bill Number<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Entered<b> 50 </b> in other charges<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Net amount in Purchase Grn = <b>50.00</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Unable to create Purchase GRNjava.lang.Exception: Element not clicked org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input type="submit" name="commit" value="Save Changes" class="btn btn-success validate-transaction" onclick="validate_inventory_purchase_transactions_form()" data-disable-with="Please Wait..." disabled="disabled"> is not clickable at point (1562, 644). Other element would receive the click: <div class="col-md-2 col-md-offset-10">...</div>
+  (Session info: chrome=115.0.5790.110)
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'SPZMUMLAP0011', ip: '192.168.1.4', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4607fbf37badb0ce71f5b4f0fc34b260, clickElement {id=753A8008A73B6607099C1A0F4916824F_element_183}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.16 (7e1ff058633f..., userDataDir: C:\Users\praveenikkr\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:62173}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62173/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (4607fbf37badb0ce71f5b4f0fc34b260)] -> xpath: //input[@value='Save Changes']]
+Session ID: 4607fbf37badb0ce71f5b4f0fc34b260<br/>
+TEST Case Failed ->Unable to create Purchase GRNjava.lang.Exception: Element not clicked org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input type="submit" name="commit" value="Save Changes" class="btn btn-success validate-transaction" onclick="validate_inventory_purchase_transactions_form()" data-disable-with="Please Wait..." disabled="disabled"> is not clickable at point (1562, 644). Other element would receive the click: <div class="col-md-2 col-md-offset-10">...</div>
+  (Session info: chrome=115.0.5790.110)
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'SPZMUMLAP0011', ip: '192.168.1.4', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4607fbf37badb0ce71f5b4f0fc34b260, clickElement {id=753A8008A73B6607099C1A0F4916824F_element_183}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.16 (7e1ff058633f..., userDataDir: C:\Users\praveenikkr\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:62173}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62173/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (4607fbf37badb0ce71f5b4f0fc34b260)] -> xpath: //input[@value='Save Changes']]
+Session ID: 4607fbf37badb0ce71f5b4f0fc34b260 expected [true] but found [false]<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Purchase Grn not Created<br/>
+TEST Case Failed ->Purchase Grn not Created expected [true] but found [false]<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+</div>
+</td>
+<td></td>
+<td>89</td>
+<td>tests.inventoryStores.opticalStore.Transaction.PurchaseBillTest@24f43aa3</td></tr>
+<tr>
+<td title='tests.inventoryStores.opticalStore.Transaction.PurchaseBillTest.validateEditPurchaseBill()'><b>validateEditPurchaseBill</b><br>Test class: tests.inventoryStores.opticalStore.Transaction.PurchaseBillTest<br>Test method: Validating Edit Purchase Bill<br/>
+<a href="#Output-209516740" onClick='toggleBox("Output-209516740", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-209516740" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-209516740">
+Test Case Description: The Facility - <b>TST</b> is already selected.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Pharmacy automation- Pharmacy store is selected.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Unable to validate purchase bill edit functionality-->java.lang.Exception: Element not clicked org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Close']"}
+  (Session info: chrome=115.0.5790.110)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'SPZMUMLAP0011', ip: '192.168.1.4', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4607fbf37badb0ce71f5b4f0fc34b260, findElement {using=xpath, value=//button[text()='Close']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.16 (7e1ff058633f..., userDataDir: C:\Users\praveenikkr\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:62173}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62173/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4607fbf37badb0ce71f5b4f0fc34b260<br/>
+TEST Case Failed ->Unable to validate purchase bill edit functionality-->java.lang.Exception: Element not clicked org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Close']"}
+  (Session info: chrome=115.0.5790.110)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'SPZMUMLAP0011', ip: '192.168.1.4', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4607fbf37badb0ce71f5b4f0fc34b260, findElement {using=xpath, value=//button[text()='Close']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.16 (7e1ff058633f..., userDataDir: C:\Users\praveenikkr\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:62173}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62173/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4607fbf37badb0ce71f5b4f0fc34b260 expected [true] but found [false]<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>tests.inventoryStores.opticalStore.Transaction.PurchaseBillTest@24f43aa3</td></tr>
+<tr>
+<td title='tests.inventoryStores.opticalStore.Transaction.PurchaseBillTest.validateCancelPurchaseBill()'><b>validateCancelPurchaseBill</b><br>Test class: tests.inventoryStores.opticalStore.Transaction.PurchaseBillTest<br>Test method: Validating Cancel Purchase Bill<br/>
+<a href="#Output-701850557" onClick='toggleBox("Output-701850557", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-701850557" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-701850557">
+Test Case Description: The Facility - <b>TST</b> is already selected.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Pharmacy automation- Pharmacy store is selected.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Unable to validate purchase bill Cancel functionality-->java.lang.Exception: Element not clicked org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Close']"}
+  (Session info: chrome=115.0.5790.110)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'SPZMUMLAP0011', ip: '192.168.1.4', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4607fbf37badb0ce71f5b4f0fc34b260, findElement {using=xpath, value=//button[text()='Close']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.16 (7e1ff058633f..., userDataDir: C:\Users\praveenikkr\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:62173}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62173/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4607fbf37badb0ce71f5b4f0fc34b260<br/>
+TEST Case Failed ->Unable to validate purchase bill Cancel functionality-->java.lang.Exception: Element not clicked org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Close']"}
+  (Session info: chrome=115.0.5790.110)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'SPZMUMLAP0011', ip: '192.168.1.4', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4607fbf37badb0ce71f5b4f0fc34b260, findElement {using=xpath, value=//button[text()='Close']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.16 (7e1ff058633f..., userDataDir: C:\Users\praveenikkr\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:62173}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62173/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4607fbf37badb0ce71f5b4f0fc34b260 expected [true] but found [false]<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+</div>
+</td>
+<td></td>
+<td>14</td>
+<td>tests.inventoryStores.opticalStore.Transaction.PurchaseBillTest@24f43aa3</td></tr>
+<tr>
+<td title='tests.inventoryStores.opticalStore.Transaction.PurchaseBillTest.validateCreatePurchaseBillWithPO()'><b>validateCreatePurchaseBillWithPO</b><br>Test class: tests.inventoryStores.opticalStore.Transaction.PurchaseBillTest<br>Test method: Validating Create Purchase Bill with Purchase Order<br/>
+<a href="#Output-1977345168" onClick='toggleBox("Output-1977345168", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1977345168" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1977345168">
+Test Case Description: The Facility - <b>TST</b> is already selected.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option <b>Organisation Settings</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>Inventory & Supply Chain</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Store Setup</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: GST no. present in Pharmacy automation is <b>20BAC</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Option in the Left Panel = <b>Inventory & Supply Chain</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Selected Sub Option in the Left Panel = <b>Vendor Master</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: GST no. present in Supplier ABC is <b>21EAC</b><br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Pharmacy automation- Pharmacy store is selected.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+</div>
+</td>
+<td></td>
+<td>63</td>
+<td>tests.inventoryStores.opticalStore.Transaction.PurchaseBillTest@24f43aa3</td></tr>
+<tr>
+<td title='tests.inventoryStores.opticalStore.Transaction.PurchaseBillTest.validateApprovePurchaseBill()'><b>validateApprovePurchaseBill</b><br>Test class: tests.inventoryStores.opticalStore.Transaction.PurchaseBillTest<br>Test method: Validating Approve Purchase Bill<br/>
+<a href="#Output-866710867" onClick='toggleBox("Output-866710867", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-866710867" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-866710867">
+Test Case Description: The Facility - <b>TST</b> is already selected.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Pharmacy automation- Pharmacy store is selected.<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+Test Case Description: Unable to validate purchase bill Approve functionality-->java.lang.Exception: Element not clicked org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Close']"}
+  (Session info: chrome=115.0.5790.110)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'SPZMUMLAP0011', ip: '192.168.1.4', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4607fbf37badb0ce71f5b4f0fc34b260, findElement {using=xpath, value=//button[text()='Close']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.16 (7e1ff058633f..., userDataDir: C:\Users\praveenikkr\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:62173}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62173/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4607fbf37badb0ce71f5b4f0fc34b260<br/>
+TEST Case Failed ->Unable to validate purchase bill Approve functionality-->java.lang.Exception: Element not clicked org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Close']"}
+  (Session info: chrome=115.0.5790.110)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'SPZMUMLAP0011', ip: '192.168.1.4', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4607fbf37badb0ce71f5b4f0fc34b260, findElement {using=xpath, value=//button[text()='Close']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.16 (7e1ff058633f..., userDataDir: C:\Users\praveenikkr\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:62173}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62173/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4607fbf37badb0ce71f5b4f0fc34b260 expected [true] but found [false]<br/>
+Expected: true<br/>
+Actual: true<br/>
+<br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>tests.inventoryStores.opticalStore.Transaction.PurchaseBillTest@24f43aa3</td></tr>
+</table><p>
+</body>
+</html>
